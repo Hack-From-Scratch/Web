@@ -141,6 +141,16 @@ export default function Layout() {
             >
               <i className="fa-brands fa-youtube text-3xl"></i>
             </a>
+
+            <a
+              href="https://www.youtube.com/channel/UCb89kHtc8hzLqaJMKDiKrRw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="text-slate-400 hover:text-[#FF4500] transition-all duration-300 hover:-translate-y-1"
+            >
+              <i className="fa-brands fa-reddit text-3xl"></i>
+            </a>
           </div>
 
           <p className="text-slate-600 text-sm">HackFromScratch 2026.</p>

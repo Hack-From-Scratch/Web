@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Donate() {
-  const [selectedTier, setSelectedTier] = useState<number | null>(null);
-
   const tiers = [
     {
       price: 15,
@@ -33,126 +31,68 @@ export default function Donate() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+      {/* HEADER */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Support the <span className="text-orange-500">Scratch Foundation</span>
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-          100% of your donation goes directly to early STEM education. Purdue Innovates will match
-          donations by supporting student creators and their creative work - meaning that you can
-          get some awesome student-made swag for donating! Select a reward tier below to begin.
+        <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          All donations go directly to the Scratch Foundation. Purdue Innovates will match donations
+          by supporting student creators and their creative work—meaning that you can get some
+          awesome student-made swag for donating! Check out the reward tiers below.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      {/* REWARD SHOWCASE GRID */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
         {tiers.map((tier, idx) => (
           <div
             key={idx}
-            onClick={() => setSelectedTier(tier.price)}
-            className={`cursor-pointer p-6 rounded-2xl border-2 transition-all duration-300 flex flex-col ${
-              selectedTier === tier.price
-                ? "border-orange-500 bg-orange-500/10 scale-[1.02]"
-                : "border-slate-700 bg-slate-800 hover:border-slate-500 hover:bg-slate-700/50"
-            }`}
+            className="p-8 rounded-3xl border border-slate-700 bg-slate-800/40 hover:bg-slate-800 transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] hover:border-orange-500/50 group"
           >
-            <h3 className="text-2xl font-bold text-white mb-2">{tier.name}</h3>
-            <p className="text-3xl font-black text-orange-400 mb-4">${tier.price}</p>
-            <p className="text-slate-300 flex-grow">{tier.desc}</p>
-            {selectedTier === tier.price && (
-              <div className="mt-4 inline-block bg-orange-500 text-slate-900 font-bold px-4 py-1 rounded text-sm text-center">
-                Selected
-              </div>
-            )}
+            <h3 className="text-2xl font-bold mb-2 text-slate-200 group-hover:text-white transition-colors">
+              {tier.name}
+            </h3>
+            <div className="mb-4">
+              <span className="text-4xl font-black text-orange-400">${tier.price}</span>
+              <span className="text-slate-500 font-bold text-sm ml-2 uppercase tracking-widest">
+                Tier
+              </span>
+            </div>
+            <p className="text-slate-300 flex-grow leading-relaxed">{tier.desc}</p>
           </div>
         ))}
       </div>
 
-      {/* The Handoff Form (Only visible when a tier is clicked) */}
-      {selectedTier && (
-        <div className="max-w-2xl mx-auto bg-slate-800 p-8 rounded-2xl border border-slate-600 animate-in fade-in slide-in-from-bottom-4">
-          <h2 className="text-2xl font-bold mb-6 border-b border-slate-700 pb-4">
-            Step 2: Shipping & Details
+      {/* THE TILTIFY CTA BILLBOARD */}
+      <div className="max-w-3xl mx-auto bg-slate-900 p-12 rounded-3xl border-2 border-slate-800 shadow-2xl text-center relative overflow-hidden">
+        {/* Decorative glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-orange-500/5 blur-[60px] pointer-events-none"></div>
+
+        <div className="relative z-10">
+          <h2 className="text-3xl md:text-4xl font-black mb-6 text-white uppercase tracking-tight">
+            Ready to make an impact?
           </h2>
-          <form
-            className="space-y-4"
-            onSubmit={(e) => {
-              e.preventDefault(); /* Trigger BoilerLink Redirect Here */
-            }}
+          <p className="text-slate-400 mb-10 text-lg max-w-xl mx-auto">
+            All donations, reward selections, and shipping details are processed securely through
+            our official Tiltify campaign.
+          </p>
+
+          {/* IMPORTANT: Swap out the href="#" with your actual Tiltify campaign URL once it's live! */}
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-12 py-5 bg-orange-500 hover:bg-orange-400 text-slate-900 font-black text-xl rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:-translate-y-1 uppercase tracking-tight"
           >
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm text-slate-400 mb-1">First Name</label>
-                <input
-                  type="text"
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-white focus:border-orange-500 outline-none"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm text-slate-400 mb-1">Last Name</label>
-                <input
-                  type="text"
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-white focus:border-orange-500 outline-none"
-                  required
-                />
-              </div>
-            </div>
+            <i className="fa-solid fa-heart"></i> Donate on Tiltify
+          </a>
 
-            {/* Conditional Dropdowns based on Tier */}
-            {selectedTier >= 25 && selectedTier < 100 && selectedTier !== 50 && (
-              <div>
-                <label className="block text-sm text-slate-400 mb-1">Make your choice:</label>
-                <select className="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-white focus:border-orange-500 outline-none">
-                  {selectedTier === 25 ? (
-                    <>
-                      <option>PMP Compilation CD</option>
-                      <option>SIGGD OST CD</option>
-                    </>
-                  ) : (
-                    <>
-                      <option>Sighorse Book</option>
-                      <option>Creative Writing Club Book</option>
-                    </>
-                  )}
-                </select>
-              </div>
-            )}
-
-            {(selectedTier === 50 || selectedTier === 100) && (
-              <div>
-                <label className="block text-sm text-slate-400 mb-1">T-Shirt Size</label>
-                <select className="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-white focus:border-orange-500 outline-none">
-                  <option>Small</option>
-                  <option>Medium</option>
-                  <option>Large</option>
-                  <option>XL</option>
-                  <option>2XL</option>
-                </select>
-              </div>
-            )}
-
-            <div>
-              <label className="block text-sm text-slate-400 mb-1">Full Shipping Address</label>
-              <textarea
-                className="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-white focus:border-orange-500 outline-none"
-                rows={3}
-                required
-                placeholder="123 Purdue St, West Lafayette, IN 47906"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full mt-6 bg-orange-500 hover:bg-orange-400 text-slate-900 font-bold text-xl py-4 rounded-xl shadow-lg transition-transform hover:-translate-y-1"
-            >
-              Continue to BoilerLink Payment
-            </button>
-            <p className="text-center text-xs text-slate-500 mt-4">
-              You will be redirected to Purdue's secure BoilerLink portal to complete your donation.
-            </p>
-          </form>
+          <p className="text-center text-xs text-slate-500 mt-6 font-medium uppercase tracking-widest flex justify-center items-center gap-2">
+            <i className="fa-solid fa-lock"></i> Securely processed by Tiltify
+          </p>
         </div>
-      )}
+      </div>
     </div>
   );
 }
