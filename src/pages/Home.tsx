@@ -1,10 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import EventTimeline from "../components/EventTimeline";
 
 export default function Home() {
   const channelId = "UCb89kHtc8hzLqaJMKDiKrRw";
-  const liveUrl = `https://www.youtube.com/embed/live_stream?channel=${channelId}`;
+  // const liveUrl = `https://www.youtube.com/embed/live_stream?channel=${channelId}`;
   const channelUrl = `https://www.youtube.com/channel/${channelId}/live`;
 
   return (
