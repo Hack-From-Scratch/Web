@@ -20,7 +20,7 @@ export default function Home() {
         </p>
 
         {/* Video Embed */}
-        <div className="w-full max-w-5xl px-4 mb-10">
+        {/* <div className="w-full max-w-5xl px-4 mb-10">
           <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-slate-800 shadow-2xl shadow-orange-900/20">
             <iframe
               src={liveUrl}
@@ -29,7 +29,7 @@ export default function Home() {
               allowFullScreen
             ></iframe>
           </div>
-        </div>
+        </div> */}
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 px-4">

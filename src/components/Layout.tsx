@@ -29,7 +29,7 @@ export default function Layout() {
     },
     {
       src: "/clubs/rr.jpeg",
-      alt: "RR",
+      alt: "Railside Robotics",
       link: "https://sites.google.com/view/railsiderobotics/home?authuser=0",
     },
     {
@@ -49,8 +49,11 @@ export default function Layout() {
       alt: "Touch Grass Club",
       link: "https://www.instagram.com/p/DTt3k18DdWV/",
     },
-    // { src: "/clubs/caryclub.png", alt: "Cary Club" }, // Elevated to Sponsor
-    // { src: "/clubs/mcutroyalhighlanders.jpeg", alt: "McCutcheon" }, // Elevated to Sponsor
+    {
+      src: "/clubs/pmp.jpeg",
+      alt: "Purdue Music Producers",
+      link: "https://discord.gg/UFDhq5VfaF",
+    },
   ];
 
   return (
@@ -91,30 +94,40 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        {/* Sponsor Grid */}
-        <h3 className="text-xl font-bold text-slate-400 mb-6">Sponsored By</h3>
-        <div className="flex flex-wrap justify-center items-center gap-8 mb-12 opacity-90 grayscale hover:grayscale-0 transition-all duration-500">
-          <a href="https://purdueinnovates.org/" rel="noopener noreferrer">
+      <div className="max-w-7xl mx-auto px-4 text-center mt-12">
+        {/* Sponsor Grid - LOGOS INCREASED */}
+        <h3 className="text-2xl font-bold text-slate-400 mb-8 uppercase tracking-widest">
+          Sponsored By
+        </h3>
+        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 mb-16 opacity-90 grayscale hover:grayscale-0 transition-all duration-500">
+          {/* <a href="https://purdueinnovates.org/" rel="noopener noreferrer">
             <img
               src="/sponsors/purdueinnovates.jpg"
               alt="Purdue Innovates"
-              className="h-12 object-contain"
+              className="h-20 md:h-24 object-contain"
             />
-          </a>
+          </a> */}
           <a
             href="https://www.instagram.com/purdue_cary_club/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img src="/sponsors/caryclub.png" alt="Cary Club" className="h-12 object-contain" />
+            <img
+              src="/sponsors/caryclub.png"
+              alt="Cary Club"
+              className="h-20 md:h-24 object-contain"
+            />
           </a>
           <a
             href="https://www.gqtmovies.com/gqt-wabash-landing-9"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img src="/sponsors/wl9.png" alt="Wabash Landing 9" className="h-12 object-contain" />
+            <img
+              src="/sponsors/wl9.png"
+              alt="Wabash Landing 9"
+              className="h-20 md:h-24 object-contain"
+            />
           </a>
           <a
             href="https://www.instagram.com/mchighlanders/"
@@ -124,11 +137,15 @@ export default function Layout() {
             <img
               src="/sponsors/mcutroyalhighlanders.jpeg"
               alt="McCutcheon Royal Highlanders"
-              className="h-12 object-contain"
+              className="h-20 md:h-24 object-contain"
             />
           </a>
           <a href="https://datamine.purdue.edu/" rel="noopener noreferrer" target="_blank">
-            <img src="/sponsors/datamine.png" alt="The Data Mine" className="h-12 object-contain" />
+            <img
+              src="/sponsors/datamine.png"
+              alt="The Data Mine"
+              className="h-20 md:h-24 object-contain"
+            />
           </a>
         </div>
 
@@ -136,13 +153,12 @@ export default function Layout() {
         <h3 className="text-lg font-bold text-slate-500 mb-6">Featuring Student Creators From</h3>
         <div className="flex flex-wrap justify-center items-center gap-6 mb-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
           {participatingClubs.map((club, index) => (
-            <a href={club.link} rel="noopener noreferrer" target="_blank">
+            <a href={club.link} rel="noopener noreferrer" target="_blank" key={index}>
               <img
-                key={index}
                 src={club.src}
                 alt={club.alt}
-                title={club.alt} /* Adds a nice hover tooltip for the club name */
-                className="h-10 object-contain rounded-md" /* Added rounded-md in case some jpegs have sharp white corners */
+                title={club.alt}
+                className="h-10 object-contain rounded-md"
               />
             </a>
           ))}
@@ -180,7 +196,6 @@ export default function Layout() {
               aria-label="X (Twitter)"
               className="text-slate-400 hover:text-white transition-all duration-300 hover:-translate-y-1"
             >
-              {/* Note: Font Awesome uses 'fa-x-twitter' for the new X logo */}
               <i className="fa-brands fa-x-twitter text-3xl"></i>
             </a>
 
@@ -195,10 +210,10 @@ export default function Layout() {
             </a>
 
             <a
-              href="https://www.youtube.com/channel/UCb89kHtc8hzLqaJMKDiKrRw/"
+              href="https://www.reddit.com/" /* Added placeholder reddit link based on your previous icon */
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="YouTube"
+              aria-label="Reddit"
               className="text-slate-400 hover:text-[#FF4500] transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-reddit text-3xl"></i>

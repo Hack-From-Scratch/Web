@@ -8,14 +8,14 @@ export default function CreativeJam() {
       title: "Player One",
       judge: "SIGGD",
       judgeLogo: "/clubs/siggd.png",
-      desc: "The best playable experience. Can be a game, a physical toy, or an interactive installation.",
+      desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
     },
     {
       title: "Worldbuilder",
       judge: "Creative Writing Club",
       judgeLogo: "/clubs/creativewritingclub.png",
-      desc: "Focused on lore, environment design, writing, or immersive atmospheric art.",
+      desc: "For projects with deep lore, environment design, writing, or immersive atmosphere.",
       criteria: ["Immersion & Delivery", "Originality", "Depth"],
     },
     {
@@ -36,18 +36,47 @@ export default function CreativeJam() {
       title: "From Scratch",
       judge: "Purdue Hackers",
       judgeLogo: "/clubs/purduehackers.jpeg",
-      desc: "The ultimate learning category. Built using purely low-level tools or a completely new skill.",
+      desc: "For the project that pushes the maker the most out of their comfort zone (all about HOW you build it).",
       criteria: [
-        // TODO,
+        // NOTE: MADE THESE UP
+        "Personal Growth & Lessons Learned",
+        "Daily Checkpoints",
+        "Technical Innovation & Creativity",
       ],
     },
     {
       title: "Mayhem",
       judge: "McCutcheon Mayhem Team",
       judgeLogo: "/clubs/mcutroyalhighlanders.jpeg",
-      desc: "The most chaotic, funny, or intentionally bizarre creation. Surprise the judges.",
+      desc: "For the most absurd, chaotic, outside-the-box projects.",
       criteria: [
-        // TODO
+        // NOTE: MADE THESE UP
+        "Creative Misuse of Technology",
+        "Comedic Value",
+        "Difficulty & Polish of Execution",
+      ],
+    },
+    {
+      title: "Pixel Perfect",
+      judge: "Creative Coding Club",
+      judgeLogo: "/clubs/creativecodingclub.jpeg",
+      desc: "For projects with a focus on visual arts.",
+      criteria: [
+        // NOTE: MADE THESE UP
+        "Art Direction & Style",
+        "Technical Execution",
+        "Visual Consistency",
+      ],
+    },
+    {
+      title: "Audio Alchemist",
+      judge: "Purdue Music Producers",
+      judgeLogo: "/clubs/pmp.jpeg",
+      desc: "For projects with a focus on music and sound.",
+      criteria: [
+        // NOTE: MADE THESE UP
+        "Composition & Arrangement",
+        "Sound Design & Mixing",
       ],
     },
   ];

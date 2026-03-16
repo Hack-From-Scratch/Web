@@ -9,22 +9,22 @@ export default function Donate() {
     },
     {
       price: 25,
-      name: "The Audiophile",
+      name: "The Audio",
       desc: "Everything above, PLUS your choice of the PMP Compilation CD or the SIGGD Echoes of Isovios OST CD.",
     },
     {
       price: 40,
-      name: "The Lore Master",
+      name: "The Lore",
       desc: "Everything in the Swag Bag, PLUS your choice of the Sighorse book or the Creative Writing Club book.",
     },
     {
       price: 50,
-      name: "The Uniform",
+      name: "The Shirt",
       desc: "The official HackFromScratch multi-color t-shirt, printed on-demand just for you.",
     },
     {
       price: 100,
-      name: "The VIP Completionist",
+      name: "VIP",
       desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators, plus your name in the broadcast credits.",
     },
   ];
@@ -43,12 +43,12 @@ export default function Donate() {
         </p>
       </div>
 
-      {/* REWARD SHOWCASE GRID */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+      {/* REWARD SHOWCASE FLEX (Replaces Grid for center alignment) */}
+      <div className="flex flex-wrap justify-center gap-6 mb-20">
         {tiers.map((tier, idx) => (
           <div
             key={idx}
-            className="p-8 rounded-3xl border border-slate-700 bg-slate-800/40 hover:bg-slate-800 transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] hover:border-orange-500/50 group"
+            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-slate-700 bg-slate-800/40 hover:bg-slate-800 transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] hover:border-orange-500/50 group"
           >
             <h3 className="text-2xl font-bold mb-2 text-slate-200 group-hover:text-white transition-colors">
               {tier.name}
