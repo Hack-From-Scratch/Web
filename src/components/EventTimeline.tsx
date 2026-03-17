@@ -106,7 +106,7 @@ export default function EventTimeline() {
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
-      <h2 className="text-4xl font-bold mb-10 text-orange-500 text-center tracking-tight">
+      <h2 className="text-4xl font-bold mb-10 text-[#fcc15a] text-center tracking-tight">
         Stream Schedule
       </h2>
 
@@ -118,7 +118,7 @@ export default function EventTimeline() {
             onClick={() => setActiveDate(dateKey)}
             className={`px-5 py-2 rounded-full font-bold text-sm md:text-base transition-all duration-300 ${
               activeDate === dateKey
-                ? "bg-orange-500 text-slate-900 shadow-[0_0_15px_rgba(249,115,22,0.4)] scale-105"
+                ? "bg-[#fcc15a] text-slate-900 shadow-[0_0_15px_rgba(249,115,22,0.4)] scale-105"
                 : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-slate-200"
             }`}
           >
@@ -151,7 +151,7 @@ export default function EventTimeline() {
                 ${
                   isFinished
                     ? "bg-slate-600"
-                    : "bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.8)]"
+                    : "bg-[#fcc15a] shadow-[0_0_10px_rgba(249,115,22,0.8)]"
                 }`}
               ></div>
 

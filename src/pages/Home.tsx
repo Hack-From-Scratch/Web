@@ -10,10 +10,10 @@ export default function Home() {
     <div className="flex flex-col gap-16 pb-16">
       {/* HERO SECTION */}
       <section className="w-full pt-12 flex flex-col items-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-6 text-center tracking-tight">
-          HackFrom<span className="text-orange-500">Scratch</span>
+        <h1 className="text-5xl md:text-7xl font-bold text-[#000] mb-6 text-center tracking-tight">
+          HackFrom<span className="text-[#fcc15a]">Scratch</span>
         </h1>
-        <p className="text-xl text-slate-400 mb-10 text-center max-w-2xl px-4">
+        <p className="text-xl text-slate-800 mb-10 text-center max-w-2xl px-4">
           A week-long charity stream/creative jam uniting Purdue creators to support the Scratch
           Foundation.
         </p>
@@ -34,7 +34,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 px-4">
           <Link
             to="/donate"
-            className="px-8 py-4 bg-orange-500 hover:bg-orange-400 text-slate-900 font-bold text-lg rounded-lg shadow-lg transition-transform hover:-translate-y-1 text-center"
+            className="px-8 py-4 bg-[#fcc15a] hover:bg-orange-400 text-white-500 font-bold text-lg rounded-lg shadow-lg transition-transform hover:-translate-y-1 text-center"
           >
             Donate & Claim Rewards
           </Link>
@@ -64,10 +64,10 @@ export default function Home() {
 
           {/* Mission Text */}
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Why We Support the <span className="text-orange-500">Scratch Foundation</span>
+            <h2 className="text-3xl font-bold mb-6 text-black">
+              Why We Support the <span className="text-[#fcc15a]">Scratch Foundation</span>
             </h2>
-            <p className="text-slate-400 mb-6 leading-relaxed">
+            <p className="text-slate-900 mb-6 leading-relaxed">
               At Purdue, we've been given the tools to build the future. But for millions of kids,
               the door to creative expression is still closed. We're using this week to support the
               Scratch Foundation - ensuring children have a safe, kind place to find their voice,
@@ -79,22 +79,22 @@ export default function Home() {
 
       {/* DONATION GOAL PROGRESS */}
       <section className="max-w-4xl mx-auto w-full px-4">
-        <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+        <div className="bg-[#fcc15a] p-6 rounded-2xl border border-slate-700">
           <div className="flex justify-between items-end mb-2">
             <div>
-              <p className="text-slate-400 font-semibold uppercase tracking-wider text-sm">
+              <p className="text-white font-semibold uppercase tracking-wider text-sm">
                 Campaign Goal
               </p>
-              <p className="text-3xl font-bold text-white">
-                $0 <span className="text-lg text-slate-400 font-normal">raised so far</span>
+              <p className="text-3xl font-bold text-black">
+                $0 <span className="text-lg text-white font-normal">raised so far</span>
               </p>
             </div>
-            <p className="text-xl font-bold text-orange-500">$10,000</p>
+            <p className="text-xl font-bold text-white">$10,000</p>
           </div>
           <div className="w-full bg-slate-900 rounded-full h-4 overflow-hidden border border-slate-700">
             {/* Change the width percentage as donations come in */}
             <div
-              className="bg-orange-500 h-4 rounded-full transition-all duration-1000"
+              className="bg-[#00fb00] h-4 rounded-full transition-all duration-1000"
               style={{ width: "5%" }}
             ></div>
           </div>

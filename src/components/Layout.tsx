@@ -56,8 +56,8 @@ export default function Layout() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-orange-500 selection:text-white flex flex-col">
-      <nav className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800 p-4">
+    <div className="min-h-screen bg-[#f7f0db] text-slate-900 font-sans selection:bg-[#dbae53] selection:text-slate-900 flex flex-col">
+      <nav className="sticky top-0 z-50 bg-[#f7f0db]/90 backdrop-blur border-b border-[#d7c9a8] p-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link
             to="/"
@@ -65,7 +65,7 @@ export default function Layout() {
           >
             <img src="/logo.png" alt="HackFromScratch" className="w-10 h-10 object-contain" />
             <span>
-              HackFrom<span className="text-orange-500">Scratch</span>
+              HackFrom<span className="text-[#fcc15a]">Scratch</span>
             </span>
           </Link>
 
@@ -73,7 +73,7 @@ export default function Layout() {
             <Link
               to="/jam"
               className={`transition-colors ${
-                location.pathname === "/jam" ? "text-orange-400" : "text-slate-300 hover:text-white"
+                location.pathname === "/jam" ? "text-[#fcc15a]" : "text-slate-900 hover:text-[#fcc15a]"
               }`}
             >
               Creative Jam
@@ -81,7 +81,7 @@ export default function Layout() {
 
             <Link
               to="/donate"
-              className="bg-orange-500 hover:bg-orange-400 text-slate-900 px-6 py-2 rounded-lg font-bold shadow-lg transition-transform hover:-translate-y-0.5"
+              className="bg-[#fcc15a] hover:bg-orange-400 text-slate-900 px-6 py-2 rounded-lg font-bold shadow-lg transition-transform hover:-translate-y-0.5"
             >
               Donate
             </Link>
@@ -95,7 +95,7 @@ export default function Layout() {
 
       <div className="max-w-7xl mx-auto px-4 text-center mt-12">
         {/* Sponsor Grid - LOGOS INCREASED */}
-        <h3 className="text-2xl font-bold text-slate-400 mb-8 uppercase tracking-widest">
+        <h3 className="text-2xl font-bold text-black mb-8 uppercase tracking-widest">
           Sponsored By
         </h3>
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 mb-16 opacity-90 grayscale hover:grayscale-0 transition-all duration-500">
@@ -149,7 +149,7 @@ export default function Layout() {
         </div>
 
         {/* Club Grid */}
-        <h3 className="text-lg font-bold text-slate-500 mb-6">Featuring Student Creators From</h3>
+        <h3 className="text-lg font-bold text-black mb-6">Featuring Student Creators From</h3>
         <div className="flex flex-wrap justify-center items-center gap-6 mb-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
           {participatingClubs.map((club, index) => (
             <a href={club.link} rel="noopener noreferrer" target="_blank" key={index}>
@@ -164,7 +164,7 @@ export default function Layout() {
         </div>
       </div>
 
-      <footer className="bg-slate-950 border-t border-slate-800 py-12 mt-auto">
+      <footer className="bg-[#e8e0c8] py-12 mt-auto">
         <div className="max-w-7xl mx-auto px-4 text-center">
           {/* Social Icons Grid */}
           <div className="flex justify-center items-center gap-8 mb-6">
@@ -173,7 +173,7 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Discord"
-              className="text-slate-400 hover:text-[#5865F2] transition-all duration-300 hover:-translate-y-1"
+              className="text-slate-700 hover:text-[#5865F2] transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-discord text-3xl"></i>
             </a>
@@ -183,7 +183,7 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-slate-400 hover:text-[#E1306C] transition-all duration-300 hover:-translate-y-1"
+              className="text-slate-700 hover:text-[#e95950] transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-instagram text-3xl"></i>
             </a>
@@ -193,7 +193,7 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
-              className="text-slate-400 hover:text-white transition-all duration-300 hover:-translate-y-1"
+              className="text-slate-700 hover:text-black transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-x-twitter text-3xl"></i>
             </a>
@@ -203,7 +203,7 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="text-slate-400 hover:text-[#FF0000] transition-all duration-300 hover:-translate-y-1"
+              className="text-slate-700 hover:text-[#FF0000] transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-youtube text-3xl"></i>
             </a>
@@ -213,7 +213,7 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Reddit"
-              className="text-slate-400 hover:text-[#FF4500] transition-all duration-300 hover:-translate-y-1"
+              className="text-slate-700 hover:text-[#FF4500] transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-reddit text-3xl"></i>
             </a>
