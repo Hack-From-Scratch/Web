@@ -31,17 +31,13 @@ export default function Home() {
         </div> */}
         <div className="w-full max-w-5xl px-4 mb-10">
           <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-slate-800 shadow-2xl shadow-orange-900/20">
-            <video
+            <iframe
               className="absolute top-0 left-0 w-full h-full object-cover"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src="/hackfromscratchad.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+              src="https://www.youtube.com/embed/i-0tqnvjAkU?autoplay=1&loop=1&playlist=i-0tqnvjAkU&mute=1&controls=1&playsinline=1"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
 

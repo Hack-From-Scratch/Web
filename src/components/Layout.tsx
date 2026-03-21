@@ -9,22 +9,42 @@ export default function Layout() {
       alt: "Catalyst",
       link: "https://www.instagram.com/catalyst_purdue/",
     },
-    { src: "/clubs/cosplayclub.jpg", alt: "Cosplay Club", link: "" },
-    { src: "/clubs/creativecodingclub.jpeg", alt: "Creative Coding Club", link: "" },
+    {
+      src: "/clubs/cosplayclub.jpg",
+      alt: "Cosplay Club",
+      link: "https://boilerlink.purdue.edu/organization/cosplayclub",
+    },
+    {
+      src: "/clubs/creativecodingclub.jpeg",
+      alt: "Creative Coding Club",
+      link: "https://boilerlink.purdue.edu/organization/creativecodingclub",
+    },
     {
       src: "/clubs/creativewritingclub.png",
       alt: "Creative Writing Club",
       link: "https://discord.gg/G2mUjyA",
     },
-    { src: "/clubs/fantasyclub.jpeg", alt: "Fantasy Club", link: "" },
+    {
+      src: "/clubs/fantasyclub.jpeg",
+      alt: "Fantasy Club",
+      link: "https://centralia.aquest.com/doku.php",
+    },
     { src: "/clubs/hackindy.jpeg", alt: "Hack Indy", link: "https://www.hackindy.io/" },
     {
       src: "/clubs/lifeonthewabash.jpg",
       alt: "Life on the Wabash",
       link: "https://www.youtube.com/@LifeOnTheWabash",
     },
-    { src: "/clubs/magicthegathering.jpeg", alt: "Magic the Gathering", link: "" },
-    { src: "/clubs/purduechessclub.png", alt: "Purdue Chess Club", link: "" },
+    {
+      src: "/clubs/magicthegathering.jpeg",
+      alt: "Magic the Gathering",
+      link: "https://boilerlink.purdue.edu/organization/cmc",
+    },
+    {
+      src: "/clubs/purduechessclub.png",
+      alt: "Purdue Chess Club",
+      link: "https://boilerlink.purdue.edu/organization/chessclub",
+    },
     {
       src: "/clubs/purduehackers.jpeg",
       alt: "Purdue Hackers",
@@ -40,7 +60,11 @@ export default function Layout() {
       alt: "Rube Goldberg Club",
       link: "https://boilermakerrubegoldberg.com/",
     },
-    { src: "/clubs/runclub.png", alt: "Run Club", link: "" },
+    {
+      src: "/clubs/runclub.png",
+      alt: "Run Club",
+      link: "https://boilerlink.purdue.edu/organization/runningclub",
+    },
     {
       src: "/clubs/search.jpeg",
       alt: "SEARCH",
