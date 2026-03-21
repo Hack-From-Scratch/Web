@@ -18,27 +18,26 @@ export default function CreativeJam() {
       desc: "For projects with deep lore, environment design, writing, or immersive atmosphere.",
       criteria: ["Immersion & Delivery", "Originality", "Depth"],
     },
-    {
-      title: "Purdue Innovates for Impact",
-      judge: "Catalyst",
-      judgeLogo: "/clubs/catalyst.png",
-      desc: "For projects that solve a real-world problem or create a meaningful impact on the community.",
-      criteria: [
-        "Feasibility",
-        "Relevance to Greater Lafayette Residents",
-        "Scalability (Beyond Lafayette)",
-        "Accessibility",
-        "User Experience",
-        "Sustainability",
-      ],
-    },
+    // {
+    //   title: "Purdue Innovates for Impact",
+    //   judge: "Catalyst",
+    //   judgeLogo: "/clubs/catalyst.png",
+    //   desc: "For projects that solve a real-world problem or create a meaningful impact on the community.",
+    //   criteria: [
+    //     "Feasibility",
+    //     "Relevance to Greater Lafayette Residents",
+    //     "Scalability (Beyond Lafayette)",
+    //     "Accessibility",
+    //     "User Experience",
+    //     "Sustainability",
+    //   ],
+    // },
     {
       title: "From Scratch",
       judge: "Purdue Hackers",
       judgeLogo: "/clubs/purduehackers.jpeg",
       desc: "For the project that pushes the maker the most out of their comfort zone (all about HOW you build it).",
       criteria: [
-        // NOTE: MADE THESE UP
         "Personal Growth & Lessons Learned",
         "Daily Checkpoints",
         "Technical Innovation & Creativity",
@@ -57,7 +56,7 @@ export default function CreativeJam() {
       ],
     },
     {
-      title: "Pixel Perfect",
+      title: "Visualization",
       judge: "Creative Coding Club",
       judgeLogo: "/clubs/creativecodingclub.jpeg",
       desc: "For projects with a focus on visual arts.",
