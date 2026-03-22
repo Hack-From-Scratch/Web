@@ -5,32 +5,32 @@ export default function CreativeJam() {
 
   const categories = [
     {
+      title: "Audio Alchemist",
+      judge: "Purdue Music Producers",
+      judgeLogo: "/clubs/pmp.jpeg",
+      desc: "For projects with a focus on music and sound.",
+      criteria: [
+        // NOTE: MADE THESE UP
+        "Composition & Arrangement",
+        "Sound Design & Mixing",
+      ],
+      prizeType: "participation",
+    },
+    {
       title: "Player One",
       judge: "SIGGD",
       judgeLogo: "/clubs/siggd.png",
       desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
+      prizeType: "raffle",
     },
     {
-      title: "Worldbuilder",
+      title: "World Builder",
       judge: "Creative Writing Club",
       judgeLogo: "/clubs/creativewritingclub.png",
       desc: "For projects with deep lore, environment design, writing, or immersive atmosphere.",
       criteria: ["Immersion & Delivery", "Originality", "Depth"],
-    },
-    {
-      title: "Purdue Innovates for Impact",
-      judge: "Catalyst",
-      judgeLogo: "/clubs/catalyst.png",
-      desc: "For projects that solve a real-world problem or create a meaningful impact on the community.",
-      criteria: [
-        "Feasibility",
-        "Relevance to Greater Lafayette Residents",
-        "Scalability (Beyond Lafayette)",
-        "Accessibility",
-        "User Experience",
-        "Sustainability",
-      ],
+      prizeType: "participation",
     },
     {
       title: "From Scratch",
@@ -43,6 +43,7 @@ export default function CreativeJam() {
         "Daily Checkpoints",
         "Technical Innovation & Creativity",
       ],
+      prizeType: "raffle",
     },
     {
       title: "Mayhem",
@@ -55,9 +56,10 @@ export default function CreativeJam() {
         "Comedic Value",
         "Difficulty & Polish of Execution",
       ],
+      prizeType: "raffle",
     },
     {
-      title: "Pixel Perfect",
+      title: "Visualization",
       judge: "Creative Coding Club",
       judgeLogo: "/clubs/creativecodingclub.jpeg",
       desc: "For projects with a focus on visual arts.",
@@ -67,18 +69,9 @@ export default function CreativeJam() {
         "Technical Execution",
         "Visual Consistency",
       ],
+      prizeType: "raffle",
     },
-    {
-      title: "Audio Alchemist",
-      judge: "Purdue Music Producers",
-      judgeLogo: "/clubs/pmp.jpeg",
-      desc: "For projects with a focus on music and sound.",
-      criteria: [
-        // NOTE: MADE THESE UP
-        "Composition & Arrangement",
-        "Sound Design & Mixing",
-      ],
-    },
+
   ];
 
   return (
@@ -115,6 +108,28 @@ export default function CreativeJam() {
                     : "border-[var(--color-secondary)] bg-[var(--color-accent)]/10 hover:border-slate-700"
                 }`}
               >
+                {/* Floating Prize Label */}
+                <div
+                  className={`
+                  absolute top-4 right-4
+                  px-3 py-1 text-xs font-black tracking-widest uppercase
+                  rounded-full shadow-md transition-all duration-300
+
+                  ${
+                    cat.prizeType === "raffle"
+                      ? activeCategory === i
+                        ? "bg-[var(--color-secondary)] text-white"
+                        : "bg-[var(--color-secondary-dark)] text-white"
+                      : activeCategory === i
+                      ? "bg-orange-500 text-white"
+                      : "bg-[var(--color-accent)] text-white"
+                  }
+                  `}
+                >
+                  {cat.prizeType === "raffle"
+                    ? "Raffle Prize"
+                    : "Participation Prize"}
+                </div>
                 <div className="flex justify-between items-center relative z-10">
                   <h3
                     className={`text-xl font-bold transition-colors ${
@@ -162,7 +177,7 @@ export default function CreativeJam() {
               </div>
 
               <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                <i className="fa-solid fa-gavel text-slate-500 text-sm"></i> Judging Criteria
+                <i className="fa-solid text-slate-500 text-sm"></i> We encourage focusing on
               </h3>
 
               <ul className="space-y-4">
@@ -187,7 +202,9 @@ export default function CreativeJam() {
                     <i className="fa-solid fa-gift"></i>
                   </div>
                   <p className="text-sm text-slate-400">
-                    <span className="text-white font-bold">Category Prize:</span> TBA
+                    <span className="text-white font-bold">{categories[activeCategory].prizeType === "raffle"
+                    ? "One Participant Receives:"
+                    : "All Participants Receive:"}</span> TBA
                   </p>
                 </div>
               </div>
@@ -198,53 +215,11 @@ export default function CreativeJam() {
 
       {/* SUBMISSION BLOCK */}
       <div className="bg-[var(--color-secondary)] p-10 rounded-3xl border border-[var(--color-secondary)] relative shadow-2xl">
-        <div className="absolute top-0 right-10 -translate-y-1/2 bg-[var(--color-accent)] text-slate-900 font-black px-4 py-1 rounded text-xs uppercase tracking-tighter">
-          Submit Now
+        <div className="absolute top-15 right-10 -translate-y-1/2 bg-[var(--color-secondary-dark)] text-slate-900 font-black px-10 py-5 rounded text-lg uppercase tracking-tighter">
+           More info coming soon
         </div>
 
         <h2 className="text-2xl font-bold mb-8 text-white">Join the Jam</h2>
-
-        <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
-          <div className="grid sm:grid-cols-2 gap-8">
-            <div className="space-y-2">
-              <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">
-                My Category
-              </label>
-              <select
-                className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-white focus:border-orange-500 outline-none appearance-none cursor-pointer hover:bg-[var(--color-secondary)] transition-colors"
-                value={categories[activeCategory].title}
-                onChange={(e) => {
-                  const idx = categories.findIndex((c) => c.title === e.target.value);
-                  setActiveCategory(idx);
-                }}
-              >
-                {categories.map((cat, i) => (
-                  <option key={i} value={cat.title}>
-                    {cat.title}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="space-y-2">
-              <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">
-                Project Link
-              </label>
-              <input
-                type="url"
-                placeholder="GitHub / Portfolio / Drive"
-                className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-white focus:border-orange-500 outline-none hover:bg-[var(--color-secondary)] transition-colors"
-                required
-              />
-            </div>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-white hover:bg-[var(--color-accent)] hover:text-slate-950 text-slate-950 font-black text-lg py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 uppercase tracking-tight"
-          >
-            Lock In Final Entry
-          </button>
-        </form>
       </div>
     </div>
   );
