@@ -35,7 +35,7 @@ export default function Donate() {
     {
       price: 100,
       name: "VIP",
-      desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators, plus your name in the broadcast credits.",
+      desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators.",
       bg: "bg-[#D07AD8]",
       image: "/rewards/everything1.png",
       image2: "/rewards/everything2.png",

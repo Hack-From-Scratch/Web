@@ -81,7 +81,11 @@ const scheduleData: StreamEvent[] = [
     title: "Creative Code for Good feat. Creative Coding Club",
     time: "2026-03-30T18:00:00",
   },
-  { id: "24", title: "P3 - Purdue E3", time: "2026-03-30T20:00:00" },
+  {
+    id: "24",
+    title: "P3 - Purdue E3 feat. SIGGD & Game Devs at Purdue",
+    time: "2026-03-30T20:00:00",
+  },
   {
     id: "25",
     title: "Live from Cary - Piano feat. Jason M. Dong, _ & _",
@@ -94,7 +98,7 @@ const scheduleData: StreamEvent[] = [
   },
   {
     id: "26",
-    title: "Life on the Wabash - Cat Cafe Interview & Episode",
+    title: "Life on the Wabash - Cat Cafe Interview with Dunja Stojovic & Episode",
     time: "2026-03-31T19:25:00",
   },
   { id: "27", title: "The Steamys", time: "2026-03-31T20:00:00" },
@@ -119,12 +123,16 @@ const scheduleData: StreamEvent[] = [
   { id: "32b", title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
   {
     id: "33",
-    title: "VR Laser Tag: McCutcheon vs Belowground feat. ",
+    title: "VR Laser Tag: McCutcheon vs Belowground feat. Julian Triveri, Artus Mosquet & more",
     time: "2026-04-02T19:30:00",
   },
   { id: "33", title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T20:15:00" },
   { id: "34", title: "SEARCH", time: "2026-04-03T19:00:00" },
-  { id: "35", title: "Qter - a Rubiks Cube Computer feat. _, _ & _", time: "2026-04-03T19:30:00" },
+  {
+    id: "35",
+    title: "Qter - a Rubiks Cube Computer feat. Arhan Chaudhary, Henry Rovnyak, Asher Gray",
+    time: "2026-04-03T19:30:00",
+  },
   {
     id: "36",
     title: "Hack Night Overview & Sighorse Panel feat. Purdue Hackers",

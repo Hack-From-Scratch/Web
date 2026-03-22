@@ -38,7 +38,6 @@ export default function CreativeJam() {
       judgeLogo: "/clubs/purduehackers.jpeg",
       desc: "For the project that pushes the maker the most out of their comfort zone (all about HOW you build it).",
       criteria: [
-        // NOTE: MADE THESE UP
         "Personal Growth & Lessons Learned",
         "Daily Checkpoints",
         "Technical Innovation & Creativity",
