@@ -51,7 +51,8 @@ export default function Donate() {
         <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
           All donations go directly to the Scratch Foundation. Our sponsors will match donations by
           supporting student creators and their creative work - meaning that you can get some
-          awesome student-made swag for donating! Check out the reward tiers below.
+          awesome student-made swag for donating (while supplies last)! Check out the reward tiers
+          below.
         </p>
       </div>
 
