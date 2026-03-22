@@ -5,30 +5,40 @@ export default function Donate() {
       name: "The Swag Bag",
       desc: "Custom stickers, buttons, a laser-cut badge, and a custom printed receipt.",
       bg: "bg-[var(--color-secondary)]",
+      image: "/gold-front.png",
     },
     {
       price: 25,
       name: "The Audio",
       desc: "Everything above, PLUS your choice of the PMP Compilation CD or the SIGGD Echoes of Isovios OST CD.",
       bg: "bg-[#A680FF]",
+      image: "/rewards/pmp.png",
+      image2: "/rewards/siggd.png",
     },
     {
       price: 40,
       name: "The Lore",
       desc: "Everything in the Swag Bag, PLUS your choice of the Sighorse book or the Creative Writing Club book.",
       bg: "bg-[#95D887]",
+      image: "/rewards/creative-writing-club.png",
+      image2: "/rewards/sighorse.png",
     },
     {
       price: 50,
       name: "The Shirt",
       desc: "The official HackFromScratch multi-color t-shirt, printed on-demand just for you.",
       bg: "bg-[#84C1E2]",
+      image: "/rewards/shirt-front.png",
+      image2: "/rewards/shirt-back.png",
+
     },
     {
       price: 100,
       name: "VIP",
       desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators, plus your name in the broadcast credits.",
       bg: "bg-[#D07AD8]",
+      image: "/rewards/everything1.png",
+      image2: "/rewards/everything2.png",
     },
   ];
 
@@ -51,9 +61,64 @@ export default function Donate() {
         {tiers.map((tier, idx) => (
           <div
             key={idx}
-            className={`w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-slate-700 ${tier.bg} hover:bg-[#EFD8A4] transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] hover:border-orange-500/50 group`}
+            className={`relative overflow-visible w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]
+            p-8 rounded-3xl border border-slate-700 ${tier.bg}
+            hover:bg-[#EFD8A4] transition-all duration-300
+            flex flex-col hover:-translate-y-1
+            hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)]
+            hover:border-orange-500/50 group`}
           >
-            
+
+            {/* Floating Reward Image */}
+            <a
+                href={tier.image || tier.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  absolute -top-8 -right-6
+                  w-40 h-40
+                  block
+                  cursor-pointer
+                  [perspective:1000px]
+                  transition-all duration-300
+                  group-hover:scale-150 group-hover:animate-bounce
+                  group-hover:-translate-y-2
+                "
+              >
+              <div
+                className={`
+                  relative w-full h-full
+                  ${tier.image2 ? "animate-(--animate-flip-x)" : ""}
+                  [transform-style:preserve-3d]
+                `}
+              >
+                {/* Front */}
+                <img
+                  src={tier.image}
+                  alt=" "
+                  className="
+                    absolute w-full h-full object-contain
+                    backface-hidden
+                    rounded-xl
+                  "
+                />
+
+                {/* Back (only if exists) */}
+                {tier.image2 && (
+                  <img
+                    src={tier.image2}
+                    alt=" "
+                    className="
+                      absolute w-full h-full object-contain
+                      rotate-y-180
+                      backface-hidden
+                      drop-shadow-xl
+                    "
+                  />
+                )}
+              </div>
+            </a>
+
             <h3 className="text-2xl font-bold mb-2 text-slate-200 group-hover:text-slate-900 transition-colors">
               {tier.name}
             </h3>
