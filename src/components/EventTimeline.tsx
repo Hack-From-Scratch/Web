@@ -4,7 +4,7 @@ interface StreamEvent {
   title: string;
   time: string; // ISO format string
   isInteractive?: boolean;
-  isMilestone?: boolean;
+  isTarget?: boolean;
 }
 
 const scheduleData: StreamEvent[] = [
@@ -103,7 +103,7 @@ const scheduleData: StreamEvent[] = [
   {
     title: "AJ Does Anything for $5,000 feat. AJ",
     time: "2026-04-01T19:15:00",
-    isMilestone: true,
+    isTarget: true,
   },
   { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
   { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
@@ -248,7 +248,7 @@ export default function EventTimeline() {
                     )}
 
                     {/* Donation Milestone Badge */}
-                    {event.isMilestone && (
+                    {event.isTarget && (
                       <span
                         className={`px-2 py-1 text-xs font-bold rounded-full border flex items-center gap-1 ${
                           isFinished
@@ -256,7 +256,7 @@ export default function EventTimeline() {
                             : "bg-purple-500/20 text-white-400 border-purple-500/30 shadow-[0_0_8px_rgba(168,85,247,0.3)]"
                         }`}
                       >
-                        <i className="fa-solid fa-star"></i> Milestone
+                        <i className="fa-solid fa-star"></i> Target
                       </span>
                     )}
                   </div>
