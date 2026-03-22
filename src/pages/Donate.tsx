@@ -30,7 +30,6 @@ export default function Donate() {
       bg: "bg-[#84C1E2]",
       image: "/rewards/shirt-front.png",
       image2: "/rewards/shirt-back.png",
-
     },
     {
       price: 100,
@@ -68,13 +67,12 @@ export default function Donate() {
             hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)]
             hover:border-orange-500/50 group`}
           >
-
             {/* Floating Reward Image */}
             <a
-                href={tier.image || tier.image}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
+              href={tier.image || tier.image}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
                   absolute -top-8 -right-6
                   w-40 h-40
                   block
@@ -84,7 +82,7 @@ export default function Donate() {
                   group-hover:scale-150 group-hover:animate-bounce
                   group-hover:-translate-y-2
                 "
-              >
+            >
               <div
                 className={`
                   relative w-full h-full
@@ -128,7 +126,9 @@ export default function Donate() {
                 Tier
               </span>
             </div>
-            <p className="text-slate-200 group-hover:text-slate-800 flex-grow leading-relaxed">{tier.desc}</p>
+            <p className="text-slate-200 group-hover:text-slate-800 flex-grow leading-relaxed">
+              {tier.desc}
+            </p>
           </div>
         ))}
       </div>
@@ -154,7 +154,8 @@ export default function Donate() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-12 py-5 bg-[var(--color-accent)] hover:bg-orange-400 text-slate-900 font-black text-xl rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:-translate-y-1 uppercase tracking-tight"
           >
-            <i className="fa-solid fa-heart"></i> Donate on Tiltify
+            {/* <i className="fa-solid fa-heart"></i> Donate on Tiltify */}
+            <i className="fa-solid fa-heart"></i>Donation link coming soon
           </a>
 
           <p className="text-center text-xs text-slate-500 mt-6 font-medium uppercase tracking-widest flex justify-center items-center gap-2">

@@ -9,11 +9,7 @@ export default function CreativeJam() {
       judge: "Purdue Music Producers",
       judgeLogo: "/clubs/pmp.jpeg",
       desc: "For projects with a focus on music and sound.",
-      criteria: [
-        // NOTE: MADE THESE UP
-        "Composition & Arrangement",
-        "Sound Design & Mixing",
-      ],
+      criteria: ["Composition & Arrangement", "Sound Design & Mixing"],
       prizeType: "participation",
     },
     {
@@ -22,7 +18,7 @@ export default function CreativeJam() {
       judgeLogo: "/clubs/siggd.png",
       desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
-      prizeType: "raffle",
+      prizeType: "participation",
     },
     {
       title: "World Builder",
@@ -50,7 +46,6 @@ export default function CreativeJam() {
       judgeLogo: "/clubs/mcutroyalhighlanders.jpeg",
       desc: "For the most absurd, chaotic, outside-the-box projects.",
       criteria: [
-        // NOTE: MADE THESE UP
         "Creative Misuse of Technology",
         "Comedic Value",
         "Difficulty & Polish of Execution",
@@ -62,15 +57,9 @@ export default function CreativeJam() {
       judge: "Creative Coding Club",
       judgeLogo: "/clubs/creativecodingclub.jpeg",
       desc: "For projects with a focus on visual arts.",
-      criteria: [
-        // NOTE: MADE THESE UP
-        "Art Direction & Style",
-        "Technical Execution",
-        "Visual Consistency",
-      ],
+      criteria: ["Art Direction & Style", "Technical Execution", "Visual Consistency"],
       prizeType: "raffle",
     },
-
   ];
 
   return (
@@ -125,9 +114,7 @@ export default function CreativeJam() {
                   }
                   `}
                 >
-                  {cat.prizeType === "raffle"
-                    ? "Raffle Prize"
-                    : "Participation Prize"}
+                  {cat.prizeType === "raffle" ? "Raffle Prize" : "Participation Prize"}
                 </div>
                 <div className="flex justify-between items-center relative z-10">
                   <h3
@@ -166,7 +153,7 @@ export default function CreativeJam() {
                   </div>
                   <div>
                     <p className="text-[10px] font-black text-[var(--color-accent)] uppercase tracking-widest">
-                      Official Judge
+                      Presented By
                     </p>
                     <h2 className="text-xl font-bold text-white leading-tight">
                       {categories[activeCategory].judge}
@@ -201,9 +188,12 @@ export default function CreativeJam() {
                     <i className="fa-solid fa-gift"></i>
                   </div>
                   <p className="text-sm text-slate-400">
-                    <span className="text-white font-bold">{categories[activeCategory].prizeType === "raffle"
-                    ? "One Participant Receives:"
-                    : "All Participants Receive:"}</span> TBA
+                    <span className="text-white font-bold">
+                      {categories[activeCategory].prizeType === "raffle"
+                        ? "One Participant Receives:"
+                        : "All Participants Receive:"}
+                    </span>{" "}
+                    TBA
                   </p>
                 </div>
               </div>
@@ -215,7 +205,7 @@ export default function CreativeJam() {
       {/* SUBMISSION BLOCK */}
       <div className="bg-[var(--color-secondary)] p-10 rounded-3xl border border-[var(--color-secondary)] relative shadow-2xl">
         <div className="absolute top-15 right-10 -translate-y-1/2 bg-[var(--color-secondary-dark)] text-slate-900 font-black px-10 py-5 rounded text-lg uppercase tracking-tighter">
-           More info coming soon
+          More info coming soon
         </div>
 
         <h2 className="text-2xl font-bold mb-8 text-white">Join the Jam</h2>

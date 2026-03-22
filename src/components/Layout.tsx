@@ -101,9 +101,7 @@ export default function Layout() {
                   HackFrom
                 </span>
                 {/* Fill */}
-                <span className="relative text-[var(--text-light)] font-bold">
-                  HackFrom
-                </span>
+                <span className="relative text-[var(--text-light)] font-bold">HackFrom</span>
               </div>
 
               {/* Small space */}
@@ -116,9 +114,7 @@ export default function Layout() {
                   Scratch
                 </span>
                 {/* Fill */}
-                <span className="relative text-[var(--text-light)] font-bold">
-                  Scratch
-                </span>
+                <span className="relative text-[var(--text-light)] font-bold">Scratch</span>
               </div>
             </div>
           </Link>
@@ -281,7 +277,7 @@ export default function Layout() {
             </a>
 
             <a
-              href="https://www.reddit.com/" /* Added placeholder reddit link based on your previous icon */
+              href="https://www.reddit.com/user/HackFromScratch/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Reddit"

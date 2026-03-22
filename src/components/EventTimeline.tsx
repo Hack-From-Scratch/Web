@@ -1,162 +1,156 @@
 import { useMemo, useState } from "react";
 
 interface StreamEvent {
-  id: string;
   title: string;
   time: string; // ISO format string
+  isInteractive?: boolean;
+  isMilestone?: boolean;
 }
 
 const scheduleData: StreamEvent[] = [
-  { id: "1", title: "Opening Ceremony (Intro)", time: "2026-03-28T09:00:00" },
+  { title: "Opening Ceremony (Intro)", time: "2026-03-28T09:00:00" },
   {
-    id: "2",
     title: "Eric Rosenbaum: Scratch Lab Director & Makey Makey Cofounder",
     time: "2026-03-28T09:30:00",
   },
   {
-    id: "3",
     title: "Purdue Faculty Panel on AI, Education & the Creative Arts",
     time: "2026-03-28T10:00:00",
   },
   {
-    id: "4",
     title: "Fantasy Worldbuilding & Character Creation feat. Purdue Fantasy Club",
     time: "2026-03-28T11:00:00",
   },
   {
-    id: "5",
     title: "Adventure Quest Jaern: Fantasy System Design feat. Purdue Fantasy Club",
     time: "2026-03-28T12:00:00",
   },
-  { id: "6", title: "Fantasy Campaign Showcases", time: "2026-03-28T13:00:00" },
-  { id: "7", title: "Cosplay Club", time: "2026-03-28T14:00:00" },
-  // { id: "8", title: "Railside Robotics (Battlebots) Tournament", time: "2026-03-28T15:00:00" },
+  { title: "Fantasy Campaign Showcases", time: "2026-03-28T13:00:00" },
+  { title: "Cosplay Club", time: "2026-03-28T14:00:00" },
+  // { title: "Railside Robotics (Battlebots) Tournament", time: "2026-03-28T15:00:00" },
   {
-    id: "9",
-    title: "D&D One Shot: The Treasure of Tealbeard", // Donation Interactive
+    title: "D&D One Shot: The Treasure of Tealbeard",
     time: "2026-03-28T15:00:00",
+    isInteractive: true,
   },
   {
-    id: "10",
     title: "Magic the Gathering Tournament Championship feat. Competitive MTG Club",
     time: "2026-03-28T19:00:00",
   },
-  // { id: "12", title: "Mario Kart Run", time: "2026-03-29T09:00:00" },
   {
-    id: "13",
     title: "Cuphead Chair% 1v1 feat. Xander Kutulas & Peter Timpane",
     time: "2026-03-29T09:00:00",
-  }, // Donation Interactive
+    isInteractive: true,
+  },
   {
-    id: "14",
-    title: "Dark Souls 3 Cinder% feat. Vladislav Pavlovskii",
+    title: "Dark Souls 3 All Bosses Glitchless feat. Vladislav Pavlovskii",
     time: "2026-03-29T10:45:00",
   },
   {
-    id: "",
     title: "How to Not Build Game Controllers + PlugNPlay feat. Xander Kutulas",
     time: "2026-03-29T12:30:00",
   },
   {
-    id: "15",
     title: "Celeste Any% 1v1 feat. Cynthia Zetlan & LuxRei",
     time: "2026-03-29T13:00:00",
   },
   {
-    id: "17",
     title: "Undertale Genocide Any% (20 min head-start) feat. Benjamin",
     time: "2026-03-29T14:00:00",
-  }, // Donation Interactive
-  { id: "18", title: "Tetris 1v1 feat. Kevin Huang & Niko Gratton", time: "2026-03-29T15:15:00" },
-  { id: "19", title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:40:00" },
+    isInteractive: true,
+  },
+  { title: "Tetris 1v1 feat. Kevin Huang & Niko Gratton", time: "2026-03-29T15:15:00" },
+  { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:40:00" },
   {
-    id: "20",
     title: "The Haunted Mansion Machine feat. Boilermaker Rube Goldberg Team",
     time: "2026-03-29T18:00:00",
   },
-  { id: "21", title: "Mario Kart 8 feat. Artus Mosquet, _, _ & _", time: "2026-03-29T19:00:00" },
-  { id: "22", title: "Gravity Chess feat. Purdue Chess Club", time: "2026-03-29T20:00:00" },
   {
-    id: "23",
+    title: "Mario Kart 8 Lockout feat. Artus Mosquet & Josh",
+    time: "2026-03-29T19:00:00",
+    isInteractive: true,
+  },
+  { title: "Gravity Chess feat. Purdue Chess Club", time: "2026-03-29T20:00:00" },
+  {
     title: "Creative Code for Good feat. Creative Coding Club",
     time: "2026-03-30T18:00:00",
   },
   {
-    id: "24",
     title: "P3 - Purdue E3 feat. SIGGD & Game Devs at Purdue",
     time: "2026-03-30T20:00:00",
   },
   {
-    id: "25",
     title: "Live from Cary - Piano feat. Jason M. Dong, _ & _",
     time: "2026-03-31T18:00:00",
   },
   {
-    id: "50",
     title: "Outdoor Games Carnival feat. Touch Grass @ Purdue",
     time: "2026-03-31T19:00:00",
   },
   {
-    id: "26",
-    title: "Life on the Wabash - Cat Cafe Interview with Dunja Stojovic & Episode",
+    title: "Life on the Wabash - Cat Cafe Interview w/ Dunja Stojovic & Episode",
     time: "2026-03-31T19:25:00",
   },
-  { id: "27", title: "The Steamys", time: "2026-03-31T20:00:00" },
+  { title: "The Steamys", time: "2026-03-31T20:00:00" },
   {
-    id: "",
     title: "Tech4Change Hackathon Overview & Highlights feat. Catalyst",
     time: "2026-04-01T18:00:00",
   },
   {
-    id: "28",
     title: "Catalyst Pitch Night feat. Jason Tennenhouse & Stacey Burr",
     time: "2026-04-01T18:45:00",
   },
   {
-    id: "",
-    title: "AJ Does Anything for $5,000",
+    title: "AJ Does Anything for $5,000 feat. AJ Collins",
     time: "2026-04-01T19:15:00",
-  }, // Donation Milestone
-  { id: "31", title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
-  { id: "30", title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
-  { id: "32a", title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00" },
-  { id: "32b", title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
+    isMilestone: true,
+  },
+  { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
+  { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
+  // { title: "Mario Kart Run Desert Bus feat. Run Club", time: "2026-04-01T12:00:00", isMilestone: true },
+  { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00" },
+  { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
   {
-    id: "33",
-    title: "VR Laser Tag: McCutcheon vs Belowground feat. Julian Triveri, Artus Mosquet & more",
+    title:
+      "VR Laser Tag: McCutcheon vs Belowground Brought to you by Julian Triveri, Artus Mosquet, Keith Gery, Connor Landzettel & Xander Kutulas",
     time: "2026-04-02T19:30:00",
   },
-  { id: "33", title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T20:15:00" },
-  { id: "34", title: "SEARCH", time: "2026-04-03T19:00:00" },
+  { title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T20:15:00" },
   {
-    id: "35",
+    title:
+      "ASTRO-USA Astronaut Habitat Tour feat. SEARCH (Space & Earth Analogs Research Chapter of Purdue)",
+    time: "2026-04-03T19:00:00",
+  },
+  {
     title: "Qter - a Rubiks Cube Computer feat. Arhan Chaudhary, Henry Rovnyak, Asher Gray",
     time: "2026-04-03T19:30:00",
   },
   {
-    id: "36",
-    title: "Hack Night Overview & Sighorse Panel feat. Purdue Hackers",
+    title: "Hack Night Overview feat. Purdue Hackers",
     time: "2026-04-03T20:00:00",
   },
-  { id: "38", title: "Improv Comedy Show feat. Ad Liberation", time: "2026-04-03T21:00:00" },
   {
-    id: "39",
+    title:
+      "Sighorse Panel feat. Kartavya Vashishtha, Grace Yoder, Arhan Chaudhary, Henry Rovnyak & Angela Qian",
+    time: "2026-04-03T20:05:00",
+  },
+  { title: "Improv Comedy Show feat. Ad Liberation", time: "2026-04-03T21:00:00" },
+  {
     title: "Creative Jam Highlights feat. the HackFromScratch Community",
     time: "2026-04-03T22:00:00",
   },
-  { id: "40", title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00" },
+  { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00" },
 ];
 
 export default function EventTimeline() {
   const currentTime = new Date();
 
-  // Dynamically group events by date string so you don't have to manually split arrays
+  // Dynamically group events by date string
   const { groupedEvents, availableDates } = useMemo(() => {
     const groups: Record<string, StreamEvent[]> = {};
 
     scheduleData.forEach((event) => {
       const date = new Date(event.time);
-      // Format as "Sat, Mar 28" for the tab buttons
       const dateKey = date.toLocaleDateString("en-US", {
         weekday: "short",
         month: "short",
@@ -175,7 +169,6 @@ export default function EventTimeline() {
     };
   }, []);
 
-  // Set the initial active tab to the first day
   const [activeDate, setActiveDate] = useState(availableDates[0]);
 
   return (
@@ -203,15 +196,16 @@ export default function EventTimeline() {
 
       {/* The Vertical Line Container */}
       <div className="relative border-l-4 border-slate-700 ml-4 md:ml-8 md:pl-0">
-        {/* Only map through the events for the currently selected date */}
-        {groupedEvents[activeDate].map((event) => {
+        {groupedEvents[activeDate].map((event, index) => {
           const eventTime = new Date(event.time);
           const isFinished = eventTime < currentTime;
 
+          // Using a combination of title and index as a unique key since ID was removed
+          const uniqueKey = `${event.title}-${index}`;
+
           return (
             <div
-              key={event.id}
-              // Added relative here so the absolute dot anchors correctly to the card
+              key={uniqueKey}
               className={`relative mb-8 ml-6 md:ml-10 p-6 rounded-2xl border transition-all duration-300
                 ${
                   isFinished
@@ -231,16 +225,48 @@ export default function EventTimeline() {
 
               <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                 <div>
-                  <h3
-                    className={`text-xl font-bold ${
-                      isFinished ? "text-slate-400" : "text-slate-100"
-                    }`}
-                  >
-                    {event.title}
-                  </h3>
-                  <p className="text-sm text-[var(--text-grey)] mt-2 font-medium tracking-wide flex items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    <h3
+                      className={`text-xl font-bold ${
+                        isFinished ? "text-slate-400" : "text-slate-100"
+                      }`}
+                    >
+                      {event.title}
+                    </h3>
+
+                    {/* Donation Interactive Badge */}
+                    {event.isInteractive && (
+                      <span
+                        className={`px-2 py-1 text-xs font-bold rounded-full border flex items-center gap-1 ${
+                          isFinished
+                            ? "bg-slate-700/50 text-slate-400 border-slate-600"
+                            : "bg-[var(--color-accent)] text-white-400 border-blue-500/30 shadow-[0_0_8px_rgba(59,130,246,0.3)]"
+                        }`}
+                      >
+                        <i className="fa-solid fa-gamepad"></i> Interactive
+                      </span>
+                    )}
+
+                    {/* Donation Milestone Badge */}
+                    {event.isMilestone && (
+                      <span
+                        className={`px-2 py-1 text-xs font-bold rounded-full border flex items-center gap-1 ${
+                          isFinished
+                            ? "bg-slate-700/50 text-slate-400 border-slate-600"
+                            : "bg-purple-500/20 text-white-400 border-purple-500/30 shadow-[0_0_8px_rgba(168,85,247,0.3)]"
+                        }`}
+                      >
+                        <i className="fa-solid fa-star"></i> Milestone
+                      </span>
+                    )}
+                  </div>
+
+                  <p className="text-sm text-white mt-2 font-medium tracking-wide flex items-center gap-2">
                     <i className="fa-regular fa-clock"></i>
-                    {eventTime.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}
+                    {eventTime.toLocaleTimeString("en-US", {
+                      hour: "numeric",
+                      minute: "2-digit",
+                    })}
                   </p>
                 </div>
               </div>
