@@ -214,6 +214,14 @@ export default function Layout() {
               className="h-20 md:h-24 object-contain"
             />
           </a>
+
+          <a href="https://www.frecklesgraphics.com/" rel="noopener noreferrer" target="_blank">
+            <img
+              src="/sponsors/freckles.png"
+              alt="Freckles Graphics"
+              className="h-20 md:h-24 object-contain"
+            />
+          </a>
         </div>
 
         {/* Club Grid */}
