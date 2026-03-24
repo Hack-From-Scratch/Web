@@ -5,7 +5,8 @@ export default function Donate() {
       name: "The Swag Bag",
       desc: "Custom stickers, buttons, a laser-cut badge, and a custom printed receipt.",
       bg: "bg-[var(--color-secondary)]",
-      image: "/gold-front.png",
+      image: "/rewards/creativecodingclub1.png",
+      image2: "/rewards/creativecodingclub2.png",
     },
     {
       price: 25,
@@ -70,9 +71,20 @@ export default function Donate() {
           >
             {/* Floating Reward Image */}
             <a
-              href={tier.image || tier.image}
+              href={tier.image}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => {
+                // open image1 or 2 randomly because it is a pain to get them both to open
+                if (!tier.image2) return;
+
+                const randomImage =
+                  Math.random() < 0.5
+                    ? tier.image
+                    : tier.image2;
+
+                e.currentTarget.href = randomImage;
+              }}
               className="
                   absolute -top-8 -right-6
                   w-40 h-40
@@ -110,6 +122,7 @@ export default function Donate() {
                     className="
                       absolute w-full h-full object-contain
                       rotate-y-180
+                      rounded-3xl
                       backface-hidden
                       drop-shadow-xl
                     "
