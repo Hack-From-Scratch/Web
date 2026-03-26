@@ -83,12 +83,12 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-31T18:00:00",
   },
   {
-    title: "Outdoor Games Carnival feat. Touch Grass @ Purdue",
+    title: "How to Touch Grass Together ft. Touch Grass Together @ Purdue",
     time: "2026-03-31T19:00:00",
   },
   {
-    title: "Life on the Wabash - Cat Cafe Interview w/ Dunja Stojovic & Episode",
-    time: "2026-03-31T19:25:00",
+    title: "Life on the Wabash - Interview w/ Dunja Stojovic & Episode",
+    time: "2026-03-31T19:15:00",
   },
   { title: "The Steamys", time: "2026-03-31T20:00:00" },
   {
