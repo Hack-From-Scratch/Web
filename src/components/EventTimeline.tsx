@@ -69,7 +69,7 @@ const scheduleData: StreamEvent[] = [
   { title: "Gravity Chess feat. Purdue Chess Club", time: "2026-03-29T19:00:00" },
   {
     title:
-      "Mario Kart 8 2v2 Lockout feat. Artus Mosquet & Nathan Kilmer vs. Josh & Eric Park (Couch: Xander Kutulas & Peter Timpane)",
+      "Mario Kart 8 2v2 Lockout feat. Artus Mosquet & Nathan Kilmer vs. Josh & Soham (Couch: Xander Kutulas & Peter Timpane)",
     time: "2026-03-29T20:00:00",
     isInteractive: true,
   },
@@ -103,17 +103,12 @@ const scheduleData: StreamEvent[] = [
     time: "2026-04-01T18:45:00",
   },
   {
-    title: "AJ Does Anything for $3,000 feat. AJ",
+    title: "AJ Does Anything for $4,000 feat. AJ",
     time: "2026-04-01T19:15:00",
     isTarget: true,
   },
   { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
   { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
-  {
-    title: "Mario Kart Run Desert Bus (Recorded on Thursday, Premiered on Friday)",
-    time: "2026-04-03T12:00:00",
-    isTarget: true,
-  },
   { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00" },
   { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
   {
@@ -122,6 +117,11 @@ const scheduleData: StreamEvent[] = [
     time: "2026-04-02T19:30:00",
   },
   { title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T20:15:00" },
+  {
+    title: "Mario Kart Run Desert Bus Attempt",
+    time: "2026-04-03T12:00:00",
+    isTarget: true,
+  },
   {
     title:
       "ASTRO-USA Astronaut Habitat Tour feat. SEARCH (Space & Earth Analogs Research Chapter of Purdue)",

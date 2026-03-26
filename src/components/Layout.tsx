@@ -232,6 +232,26 @@ export default function Layout() {
               className="h-20 md:h-24 object-contain"
             />
           </a>
+
+          <a
+            href="https://www.facebook.com/share/1BhvThCqLS/?mibextid=wwXIfr"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              src="/sponsors/gordos.png"
+              alt="Gordo's Truck"
+              className="h-20 md:h-24 object-contain"
+            />
+          </a>
+
+          <a href="https://www.papajohns.com/" rel="noopener noreferrer" target="_blank">
+            <img
+              src="/sponsors/papajohns.svg"
+              alt="Papa Johns"
+              className="h-20 md:h-24 object-contain"
+            />
+          </a>
         </div>
 
         {/* Club Grid */}
