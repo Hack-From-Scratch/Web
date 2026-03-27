@@ -3,23 +3,23 @@ export default function Donate() {
     {
       price: 15,
       name: "The Swag Bag",
-      desc: "Custom stickers, buttons, a laser-cut badge, and a custom printed receipt.",
+      desc: "Custom stickers, buttons, a laser-cut badge, and a custom printed receipt!",
       bg: "bg-[var(--color-secondary)]",
       image: "/rewards/creativecodingclub1.png",
       image2: "/rewards/creativecodingclub2.png",
     },
     {
-      price: 25,
+      price: 10,
       name: "The Audio",
-      desc: "Everything above, PLUS your choice of the PMP Compilation CD or the SIGGD Echoes of Isovios OST CD.",
+      desc: "Your choice of the PMP Compilation CD or the SIGGD Echoes of Isovios OST CD!",
       bg: "bg-[#A680FF]",
       image: "/rewards/pmp.png",
       image2: "/rewards/siggd.png",
     },
     {
-      price: 40,
+      price: 20,
       name: "The Lore",
-      desc: "Everything in the Swag Bag, PLUS your choice of the Sighorse book or the Creative Writing Club book.",
+      desc: "Your choice of the Sighorse or the Choosen One books!",
       bg: "bg-[#95D887]",
       image: "/rewards/creative-writing-club.png",
       image2: "/rewards/sighorse.png",
@@ -27,7 +27,7 @@ export default function Donate() {
     {
       price: 50,
       name: "The Shirt",
-      desc: "The official HackFromScratch multi-color t-shirt, printed on-demand just for you.",
+      desc: "The official HackFromScratch multi-color t-shirt, printed on-demand just for you!",
       bg: "bg-[#84C1E2]",
       image: "/rewards/shirt-front.png",
       image2: "/rewards/shirt-back.png",
@@ -35,7 +35,7 @@ export default function Donate() {
     {
       price: 100,
       name: "VIP",
-      desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators.",
+      desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators!",
       bg: "bg-[#D07AD8]",
       image: "/rewards/everything1.png",
       image2: "/rewards/everything2.png",
@@ -52,8 +52,8 @@ export default function Donate() {
         <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
           All donations go directly to the Scratch Foundation. Our sponsors will match donations by
           supporting student creators and their creative work - meaning that you can get some
-          awesome student-made swag for donating (while supplies last)! Check out the reward tiers
-          below.
+          awesome student-made swag for donating (while supplies last)! Check out the reward options
+          below. Note that individual donations DO NOT stack towards rewards.
         </p>
       </div>
 
@@ -78,10 +78,7 @@ export default function Donate() {
                 // open image1 or 2 randomly because it is a pain to get them both to open
                 if (!tier.image2) return;
 
-                const randomImage =
-                  Math.random() < 0.5
-                    ? tier.image
-                    : tier.image2;
+                const randomImage = Math.random() < 0.5 ? tier.image : tier.image2;
 
                 e.currentTarget.href = randomImage;
               }}
@@ -137,7 +134,7 @@ export default function Donate() {
             <div className="mb-4">
               <span className="text-4xl font-black text-[var(--color-accent)]">${tier.price}</span>
               <span className="text-slate-300 group-hover:text-slate-700 font-bold text-sm ml-2 uppercase tracking-widest">
-                Tier
+                Donation
               </span>
             </div>
             <p className="text-slate-200 group-hover:text-slate-800 flex-grow leading-relaxed">
