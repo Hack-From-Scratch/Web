@@ -60,7 +60,10 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-29T14:00:00",
     isInteractive: true,
   },
-  { title: "Tetris 1v1 feat. Kevin Huang, Niko Gratton & Eric Zhang", time: "2026-03-29T15:15:00" },
+  {
+    title: "Tetr.io 1v1 rotational feat. Kevin Huang, Niko Gratton & Eric Zhang",
+    time: "2026-03-29T15:15:00",
+  },
   { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:45:00" },
   {
     title: "The Haunted Mansion Machine feat. Boilermaker Rube Goldberg Team",
@@ -71,7 +74,6 @@ const scheduleData: StreamEvent[] = [
     title:
       "Mario Kart 8 2v2 Lockout feat. Artus Mosquet & Nathan Kilmer vs. Josh & Soham (Couch: Xander Kutulas & Peter Timpane)",
     time: "2026-03-29T20:00:00",
-    isInteractive: true,
   },
   {
     title: "Creative Code for Good feat. Creative Coding Club",
