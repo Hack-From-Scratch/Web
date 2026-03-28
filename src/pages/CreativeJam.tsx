@@ -193,7 +193,7 @@ export default function CreativeJam() {
                   <div className="w-10 h-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center text-slate-900 shadow-lg shadow-orange-500/20">
                     <i className="fa-solid fa-gift"></i>
                   </div>
-                  <p className="text-sm text-[var(--text-light1)]">
+                  <p className="text-sm text-[var(--text-light)]">
                     <span className="text-white font-bold">
                       {categories[activeCategory].prizeType === "raffle"
                         ? "One Participant Receives:"
