@@ -160,7 +160,7 @@ export default function Donate() {
 
           {/* IMPORTANT: Swap out the href="#" with your actual Tiltify campaign URL once it's live! */}
           <a
-            href="#"
+            href="https://tilt.fyi/DEomcnkl3G"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-12 py-5 bg-[var(--color-accent)] hover:bg-orange-400 text-slate-900 font-black text-xl rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:-translate-y-1 uppercase tracking-tight"

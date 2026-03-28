@@ -11,7 +11,7 @@ export default function CreativeJam() {
       desc: "For projects with a focus on music and sound.",
       criteria: ["Composition & Arrangement", "Sound Design & Mixing"],
       prizeType: "participation",
-      prize: "Ableton Live 12 Intro License"
+      prize: "Ableton Live 12 Intro License",
     },
     {
       title: "Player One",
@@ -19,8 +19,8 @@ export default function CreativeJam() {
       judgeLogo: "/clubs/siggd.png",
       desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
-      prizeType: "participation",
-      prize: "8BitDo Ultimate 2C Wireless Controller"
+      prizeType: "raffle",
+      prize: "8BitDo Ultimate 2C Wireless Controller",
     },
     {
       title: "World Builder",
@@ -28,8 +28,7 @@ export default function CreativeJam() {
       judgeLogo: "/clubs/creativewritingclub.png",
       desc: "For projects with deep lore, environment design, writing, or immersive atmosphere.",
       criteria: ["Immersion & Delivery", "Originality", "Depth"],
-      prizeType: "participation",
-      prize: "World Anvil Grandmaster monthly subscription"
+      prizeType: "raffle",
     },
     {
       title: "From Scratch",
@@ -42,7 +41,7 @@ export default function CreativeJam() {
         "Technical Innovation & Creativity",
       ],
       prizeType: "raffle",
-      prize: "1kg ELEGOO Black PLA 3D Printer Filament"
+      prize: "1kg ELEGOO Black PLA 3D Printer Filament",
     },
     {
       title: "Mayhem",
@@ -55,7 +54,7 @@ export default function CreativeJam() {
         "Difficulty & Polish of Execution",
       ],
       prizeType: "raffle",
-      prize: "Danny Devito life size cutout"
+      prize: "Danny Devito life size cutout",
     },
     {
       title: "Visualization",
@@ -64,7 +63,7 @@ export default function CreativeJam() {
       desc: "For projects with a focus on visual arts.",
       criteria: ["Art Direction & Style", "Technical Execution", "Visual Consistency"],
       prizeType: "raffle",
-      prize: "UUNA TEK iDraw 2.0 H A3 pen plotter"
+      prize: "UUNA TEK iDraw 2.0 H A3 pen plotter",
     },
   ];
 
@@ -212,7 +211,13 @@ export default function CreativeJam() {
       <div className="bg-[var(--color-secondary)] p-10 rounded-3xl border border-[var(--color-secondary)] relative shadow-2xl">
         <h2 className="text-2xl font-bold mb-8 text-white">Join the Jam</h2>
         <div className="flex justify-center">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdodWDykwsgSgb6jyuEtDcf5kNyUzELkj430oi9Pa3cTdfXRQ/viewform?embedded=true" width="800" height="2553">Loading…</iframe>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdodWDykwsgSgb6jyuEtDcf5kNyUzELkj430oi9Pa3cTdfXRQ/viewform?embedded=true"
+            width="800"
+            height="2553"
+          >
+            Loading…
+          </iframe>
         </div>
       </div>
     </div>
