@@ -11,7 +11,7 @@ const scheduleData: StreamEvent[] = [
   { title: "Opening Ceremony (Intro)", time: "2026-03-28T09:00:00" },
   {
     title: "Eric Rosenbaum: Scratch Lab Director & Makey Makey Cofounder",
-    time: "2026-03-28T09:30:00",
+    time: "2026-03-28T09:10:00",
   },
   {
     title: "Purdue Faculty Panel on AI, Education & the Creative Arts",
