@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import EventTimeline from "../components/EventTimeline";
 
 export default function Home() {
-  const channelId = "UCb89kHtc8hzLqaJMKDiKrRw";
-  // const liveUrl = `https://www.youtube.com/embed/live_stream?channel=${channelId}`;
-  const channelUrl = `https://www.youtube.com/channel/${channelId}/live`;
+  // const channelId = "UCb89kHtc8hzLqaJMKDiKrRw";
+  // const channelUrl = `https://www.youtube.com/channel/${channelId}/live`; // yt
+  const channelUrl = `https://www.twitch.tv/hackfromscratch` // twitch
 
   return (
     <div className="flex flex-col gap-16 pb-16">
@@ -54,9 +54,8 @@ export default function Home() {
           <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-[var(--color-secondary)] shadow-2xl shadow-orange-900/20">
             <iframe
               className="absolute top-0 left-0 w-full h-full object-cover"
-              src="https://www.youtube.com/embed/i-0tqnvjAkU?autoplay=1&loop=1&playlist=i-0tqnvjAkU&mute=1&controls=1&playsinline=1"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              src="https://player.twitch.tv/?channel=hackfromscratch&parent=localhost&autoplay=true&muted=true"
+              title="Twitch live stream player"
               allowFullScreen
             ></iframe>
           </div>
@@ -76,7 +75,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="px-8 py-4 bg-[var(--color-secondary)] hover:bg-slate-700 text-slate-100 font-bold text-lg rounded-lg border border-slate-700 shadow-lg transition-transform hover:-translate-y-1 text-center"
           >
-            Join the YouTube Chat
+            Join the Twitch Chat
           </a>
         </div>
       </section>

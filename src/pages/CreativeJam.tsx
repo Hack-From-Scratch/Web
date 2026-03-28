@@ -11,6 +11,7 @@ export default function CreativeJam() {
       desc: "For projects with a focus on music and sound.",
       criteria: ["Composition & Arrangement", "Sound Design & Mixing"],
       prizeType: "participation",
+      prize: "Ableton Live 12 Intro License"
     },
     {
       title: "Player One",
@@ -19,6 +20,7 @@ export default function CreativeJam() {
       desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
       prizeType: "participation",
+      prize: "8BitDo Ultimate 2C Wireless Controller"
     },
     {
       title: "World Builder",
@@ -27,6 +29,7 @@ export default function CreativeJam() {
       desc: "For projects with deep lore, environment design, writing, or immersive atmosphere.",
       criteria: ["Immersion & Delivery", "Originality", "Depth"],
       prizeType: "participation",
+      prize: "World Anvil Grandmaster monthly subscription"
     },
     {
       title: "From Scratch",
@@ -39,6 +42,7 @@ export default function CreativeJam() {
         "Technical Innovation & Creativity",
       ],
       prizeType: "raffle",
+      prize: "1kg ELEGOO Black PLA 3D Printer Filament"
     },
     {
       title: "Mayhem",
@@ -51,6 +55,7 @@ export default function CreativeJam() {
         "Difficulty & Polish of Execution",
       ],
       prizeType: "raffle",
+      prize: "Danny Devito life size cutout"
     },
     {
       title: "Visualization",
@@ -59,6 +64,7 @@ export default function CreativeJam() {
       desc: "For projects with a focus on visual arts.",
       criteria: ["Art Direction & Style", "Technical Execution", "Visual Consistency"],
       prizeType: "raffle",
+      prize: "UUNA TEK iDraw 2.0 H A3 pen plotter"
     },
   ];
 
@@ -155,7 +161,7 @@ export default function CreativeJam() {
                     <p className="text-[10px] font-black text-[var(--color-accent)] uppercase tracking-widest">
                       Brought to you by
                     </p>
-                    <h2 className="text-xl font-bold text-white leading-tight">
+                    <h2 className="text-xl font-normal tracking-wider text-white leading-tight">
                       {categories[activeCategory].judge}
                     </h2>
                   </div>
@@ -187,13 +193,13 @@ export default function CreativeJam() {
                   <div className="w-10 h-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center text-slate-900 shadow-lg shadow-orange-500/20">
                     <i className="fa-solid fa-gift"></i>
                   </div>
-                  <p className="text-sm text-slate-400">
+                  <p className="text-sm text-[var(--text-light1)]">
                     <span className="text-white font-bold">
                       {categories[activeCategory].prizeType === "raffle"
                         ? "One Participant Receives:"
                         : "All Participants Receive:"}
                     </span>{" "}
-                    TBA
+                    {categories[activeCategory].prize}
                   </p>
                 </div>
               </div>
