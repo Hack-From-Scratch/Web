@@ -210,11 +210,10 @@ export default function CreativeJam() {
 
       {/* SUBMISSION BLOCK */}
       <div className="bg-[var(--color-secondary)] p-10 rounded-3xl border border-[var(--color-secondary)] relative shadow-2xl">
-        <div className="absolute top-15 right-10 -translate-y-1/2 bg-[var(--color-secondary-dark)] text-slate-900 font-black px-10 py-5 rounded text-lg uppercase tracking-tighter">
-          More info coming soon
-        </div>
-
         <h2 className="text-2xl font-bold mb-8 text-white">Join the Jam</h2>
+        <div className="flex justify-center">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdodWDykwsgSgb6jyuEtDcf5kNyUzELkj430oi9Pa3cTdfXRQ/viewform?embedded=true" width="800" height="2553">Loading…</iframe>
+        </div>
       </div>
     </div>
   );
