@@ -111,24 +111,16 @@ export default function Home() {
 
       {/* DONATION GOAL PROGRESS */}
       <section className="max-w-4xl mx-auto w-full px-4">
-        <div className="bg-[var(--color-accent)] p-6 rounded-2xl border border-slate-700">
-          <div className="flex justify-between items-end mb-2">
-            <div>
-              <p className="text-white font-semibold uppercase tracking-wider text-sm">
-                Campaign Goal
-              </p>
-              <p className="text-3xl font-bold text-black">
-                $0 <span className="text-lg text-white font-normal">raised so far</span>
-              </p>
-            </div>
-            <p className="text-xl font-bold text-white">$5,000</p>
-          </div>
-          <div className="w-full bg-[var(--color-secondary-dark)] rounded-full h-4 overflow-hidden border border-slate-700">
-            {/* Change the width percentage as donations come in */}
-            <div
-              className="bg-[#00fb00] h-4 rounded-full transition-all duration-1000"
-              style={{ width: "5%" }}
-            ></div>
+        {/* Outer styling container to match your site's theme */}
+        <div className="p-6 rounded-2xl border border-slate-700 flex justify-center items-center">
+          {/* The Tiltify Widget Container */}
+          <div className="w-full h-[100px] relative overflow-hidden">
+            <iframe
+              src="https://overlays.tiltify.com/ppWqmz8Z6nHPXNxTVf0CJhUYyFh61j8p"
+              className="w-full h-full border-none"
+              title="Live Campaign Progress"
+              scrolling="no"
+            ></iframe>
           </div>
         </div>
       </section>
