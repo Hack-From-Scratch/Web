@@ -54,7 +54,7 @@ export default function Home() {
           <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-[var(--color-secondary)] shadow-2xl shadow-orange-900/20">
             <iframe
               className="absolute top-0 left-0 w-full h-full object-cover"
-              src="[https://player.twitch.tv/?channel=hackfromscratch&parent=hackfromscratch.org&parent=www.hackfromscratch.org&autoplay=true&muted=true](https://player.twitch.tv/?channel=hackfromscratch&parent=hackfromscratch.org&parent=www.hackfromscratch.org&autoplay=true&muted=true)"
+              src="https://player.twitch.tv/?channel=hackfromscratch&parent=hackfromscratch.org&parent=www.hackfromscratch.org&autoplay=true&muted=true"
               title="Twitch live stream player"
               allowFullScreen
             ></iframe>
