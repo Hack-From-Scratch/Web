@@ -230,8 +230,8 @@ export default function CreativeJam() {
             Ready to submit your project?
           </h2>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            We are hosting the official Creative Jam on Itch.io! Head over to our jam page to
-            officially join, upload your files, and see what everyone else is building!
+            We are hosting our Creative Jam on Itch.io! Head over to our jam page to officially
+            join, upload your files, and see what everyone else is building!
           </p>
           <a
             href="https://itch.io/jam/hackfromscratch"
