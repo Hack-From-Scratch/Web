@@ -1,12 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 // We will build this layout wrapper next
 import Layout from "./components/Layout";
 
 // Your distinct pages
-import Home from "./pages/Home";
-import Donate from "./pages/Donate";
+import LiveRedirect from "./components/LiveRedirect";
 import CreativeJam from "./pages/CreativeJam";
+import Donate from "./pages/Donate";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/jam" element={<CreativeJam />} />
+          <Route path="/live" element={<LiveRedirect />} />
         </Route>
       </Routes>
     </Router>

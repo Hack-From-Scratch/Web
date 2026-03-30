@@ -5,153 +5,155 @@ interface StreamEvent {
   time: string; // ISO format string
   isInteractive?: boolean;
   isTarget?: boolean;
+  location?: string;
 }
 
 const scheduleData: StreamEvent[] = [
-  { title: "Opening Ceremony (Intro)", time: "2026-03-28T09:00:00" },
+  { title: "Opening Ceremony (Intro)", time: "2026-03-28T09:00:00-04:00" },
   {
     title: "Eric Rosenbaum: Scratch Lab Director & Makey Makey Cofounder",
-    time: "2026-03-28T09:10:00",
+    time: "2026-03-28T09:10:00-04:00",
   },
   {
     title: "Purdue Faculty Panel on AI, Education & the Creative Arts",
-    time: "2026-03-28T10:00:00",
+    time: "2026-03-28T10:00:00-04:00",
   },
   {
     title: "Fantasy Worldbuilding & Character Creation feat. Purdue Fantasy Club",
-    time: "2026-03-28T11:00:00",
+    time: "2026-03-28T11:00:00-04:00",
   },
   {
     title: "Adventure Quest Jaern: Fantasy System Design feat. Purdue Fantasy Club",
-    time: "2026-03-28T12:00:00",
+    time: "2026-03-28T12:00:00-04:00",
   },
-  { title: "Fantasy Campaign Showcases", time: "2026-03-28T13:00:00" },
-  { title: "Cosplay 101 feat. Cosplay Creation & Appreciation Club", time: "2026-03-28T14:00:00" },
+  { title: "Fantasy Campaign Showcases", time: "2026-03-28T13:00:00-04:00" },
+  { title: "Cosplay 101 feat. Cosplay Creation & Appreciation Club", time: "2026-03-28T14:00:00-04:00" },
   {
     title: "D&D One Shot: The Treasure of Tealbeard",
-    time: "2026-03-28T15:00:00",
+    time: "2026-03-28T15:00:00-04:00",
     isInteractive: true,
   },
   {
     title: "Magic the Gathering Tournament Championship feat. Competitive MTG Club",
-    time: "2026-03-28T19:00:00",
+    time: "2026-03-28T19:00:00-04:00",
   },
   {
     title:
       "Cuphead Chair% 1v1 feat. Xander Kutulas & Peter Timpane (Couch: Jayden Wijeyakulasuriya)",
-    time: "2026-03-29T09:00:00",
+    time: "2026-03-29T09:00:00-04:00",
     isInteractive: true,
   },
   {
     title: "Dark Souls 3 All Bosses Glitchless feat. Vladislav Pavlovskii",
-    time: "2026-03-29T10:45:00",
+    time: "2026-03-29T10:45:00-04:00",
   },
   {
     title: "How to Not Build Game Controllers + PlugNPlay feat. Xander Kutulas",
-    time: "2026-03-29T12:30:00",
+    time: "2026-03-29T12:30:00-04:00",
   },
   {
     title: "Celeste Any% 1v1 feat. Cynthia Zetlan & LuxRei (Couch: Mint Deprest & Peter Timpane)",
-    time: "2026-03-29T13:00:00",
+    time: "2026-03-29T13:00:00-04:00",
   },
   {
     title:
       "Undertale Genocide Any% (20 min head-start) feat. Benjamin (Couch: Jayden Wijeyakulasuriya)",
-    time: "2026-03-29T14:00:00",
+    time: "2026-03-29T14:00:00-04:00",
     isInteractive: true,
   },
   {
     title: "Tetr.io 1v1 rotational feat. Kevin Huang, Niko Gratton & Eric Zhang",
-    time: "2026-03-29T15:15:00",
+    time: "2026-03-29T15:15:00-04:00",
   },
-  { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:45:00" },
+  { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:45:00-04:00" },
   {
     title: "The Haunted Mansion Machine feat. Boilermaker Rube Goldberg Team",
-    time: "2026-03-29T18:00:00",
+    time: "2026-03-29T18:00:00-04:00",
   },
-  { title: "Gravity Chess feat. Purdue Chess Club", time: "2026-03-29T19:00:00" },
+  { title: "Gravity Chess feat. Purdue Chess Club", time: "2026-03-29T19:00:00-04:00" },
   {
     title:
       "Mario Kart 8 2v2 Lockout feat. Artus Mosquet & Nathan Kilmer vs. Josh & Soham (Couch: Xander Kutulas & Peter Timpane)",
-    time: "2026-03-29T20:00:00",
+    time: "2026-03-29T20:00:00-04:00",
   },
   {
     title: "Creative Code for Good feat. Creative Coding Club",
-    time: "2026-03-30T18:00:00",
+    time: "2026-03-30T18:00:00-04:00",
   },
   {
     title: "P3 - Purdue E3 feat. SIGGD & Game Devs at Purdue",
-    time: "2026-03-30T20:00:00",
+    time: "2026-03-30T20:00:00-04:00",
+    location: "GQT Wabash Landing 9"
   },
   {
     title: "Live from Cary - Piano feat. Jason M. Dong, Brandt Garippo & Allen Tan",
-    time: "2026-03-31T18:00:00",
+    time: "2026-03-31T18:00:00-04:00",
   },
   {
     title: "How to Touch Grass Together ft. Touch Grass Together @ Purdue",
-    time: "2026-03-31T19:00:00",
+    time: "2026-03-31T19:00:00-04:00",
   },
   {
     title: "Life on the Wabash - Interview w/ Dunja Stojovic & Episode",
-    time: "2026-03-31T19:15:00",
+    time: "2026-03-31T19:15:00-04:00",
   },
-  { title: "The Steamys", time: "2026-03-31T20:00:00" },
+  { title: "The Steamys", time: "2026-03-31T20:00:00-04:00", location: "GQT Wabash Landing 9" },
   {
     title: "Tech4Change Hackathon Overview & Highlights feat. Catalyst",
-    time: "2026-04-01T18:00:00",
+    time: "2026-04-01T18:00:00-04:00",
   },
   {
     title: "Catalyst Pitch Night feat. Jason Tennenhouse & Stacey Burr",
-    time: "2026-04-01T18:45:00",
+    time: "2026-04-01T18:45:00-04:00",
   },
   {
     title: "AJ Does Anything for $4,000 feat. AJ",
-    time: "2026-04-01T19:15:00",
+    time: "2026-04-01T19:15:00-04:00",
     isTarget: true,
   },
-  { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
-  { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
-  { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00" },
-  { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
+  { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00-04:00" },
+  { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00-04:00" },
+  { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00-04:00" },
+  { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00-04:00" },
   {
     title:
       "VR Laser Tag: McCutcheon vs Belowground Brought to you by Julian Triveri, Artus Mosquet, Keith Gery, Connor Landzettel & Xander Kutulas",
-    time: "2026-04-02T19:30:00",
+    time: "2026-04-02T19:30:00-04:00",
   },
-  { title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T20:15:00" },
+  { title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T20:15:00-04:00" },
   {
     title: "Mario Kart Run Desert Bus Attempt",
-    time: "2026-04-03T12:00:00",
+    time: "2026-04-03T12:00:00-04:00",
     isTarget: true,
   },
   {
     title:
       "ASTRO-USA Astronaut Habitat Tour feat. SEARCH (Space & Earth Analogs Research Chapter of Purdue)",
-    time: "2026-04-03T19:00:00",
+    time: "2026-04-03T19:00:00-04:00",
   },
   {
     title: "Qter - a Rubiks Cube Computer feat. Arhan Chaudhary, Henry Rovnyak, Asher Gray",
-    time: "2026-04-03T19:30:00",
+    time: "2026-04-03T19:30:00-04:00",
   },
   {
     title: "Hack Night Overview feat. Purdue Hackers",
-    time: "2026-04-03T20:00:00",
+    time: "2026-04-03T20:00:00-04:00",
   },
   {
     title:
       "Sighorse Panel feat. Kartavya Vashishtha, Grace Yoder, Arhan Chaudhary, Henry Rovnyak, Angela Qian & Ishan Goel",
-    time: "2026-04-03T20:05:00",
+    time: "2026-04-03T20:05:00-04:00",
   },
-  { title: "Improv Comedy Show feat. Ad Liberation", time: "2026-04-03T21:00:00" },
+  { title: "Improv Comedy Show feat. Ad Liberation", time: "2026-04-03T21:00:00-04:00" },
   {
     title: "Metal Casting feat. Purdue American Foundry Society (AFS)",
-    time: "2026-04-03T22:30:00",
+    time: "2026-04-03T22:30:00-04:00",
   },
   {
     title: "Creative Jam Highlights feat. the HackFromScratch Community",
-    time: "2026-04-03T22:45:00",
+    time: "2026-04-03T22:45:00-04:00",
   },
-  { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00" },
+  { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00-04:00", location: "Bechtel Innovation and Design Center, 2nd Floor" },
 ];
 
 export default function EventTimeline() {
@@ -181,7 +183,34 @@ export default function EventTimeline() {
     };
   }, []);
 
-  const [activeDate, setActiveDate] = useState(availableDates[0]);
+  
+  // init to current day
+  const [activeDate, setActiveDate] = useState(() => {
+    const now = new Date();
+
+    let targetEvent =
+      scheduleData.find((event, i) => {
+        const start = new Date(event.time);
+        const next = scheduleData[i + 1]
+          ? new Date(scheduleData[i + 1].time)
+          : null;
+
+        return start <= now && (!next || now < next);
+      }) ||
+      scheduleData.find((event) => new Date(event.time) >= now);
+
+    if (!targetEvent) {
+      targetEvent = scheduleData[scheduleData.length - 1];
+    }
+
+    return new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+    }).format(new Date(targetEvent.time));
+  });
+
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
@@ -205,13 +234,13 @@ export default function EventTimeline() {
           </button>
         ))}
       </div>
+      
 
       {/* The Vertical Line Container */}
       <div className="relative border-l-4 border-slate-700 ml-4 md:ml-8 md:pl-0">
         {groupedEvents[activeDate].map((event, index) => {
           const eventTime = new Date(event.time);
           const isFinished = eventTime < currentTime;
-
           // Using a combination of title and index as a unique key since ID was removed
           const uniqueKey = `${event.title}-${index}`;
 
@@ -245,7 +274,18 @@ export default function EventTimeline() {
                     >
                       {event.title}
                     </h3>
-
+                    {/* In person location badge */}
+                    {event.location && (
+                      <span
+                        className={`px-2 py-1 text-xs font-bold rounded-full border flex items-center gap-1 ${
+                          isFinished
+                            ? "bg-slate-700/50 text-slate-400 border-slate-600"
+                            : "bg-green-500/20 text-green-200 border-green-500/30"
+                        }`}
+                      >
+                        <i className="fa-solid fa-map-pin"></i> In-Person
+                      </span>
+                    )}
                     {/* Donation Interactive Badge */}
                     {event.isInteractive && (
                       <span
@@ -280,6 +320,13 @@ export default function EventTimeline() {
                       minute: "2-digit",
                     })}
                   </p>
+
+                  {event.location && (
+                    <p className="text-sm text-slate-300 mt-1 flex items-center gap-2">
+                      <i className="fa-solid fa-location-dot"></i>
+                      {event.location}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
