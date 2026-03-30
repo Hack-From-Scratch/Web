@@ -218,16 +218,30 @@ export default function CreativeJam() {
       </section>
 
       {/* SUBMISSION BLOCK */}
-      <div className="bg-[var(--color-secondary)] p-10 rounded-3xl border border-[var(--color-secondary)] relative shadow-2xl">
-        <h2 className="text-2xl font-bold mb-8 text-white">Join the Jam</h2>
-        <div className="flex justify-center">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdodWDykwsgSgb6jyuEtDcf5kNyUzELkj430oi9Pa3cTdfXRQ/viewform?embedded=true"
-            width="800"
-            height="2553"
+      <div className="mt-12 bg-slate-900 border border-slate-700 rounded-3xl p-12 text-center shadow-2xl relative overflow-hidden">
+        {/* Background glow effect */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#fa5c5c]/20 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div className="relative z-10">
+          <div className="w-20 h-20 bg-[#fa5c5c] rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg shadow-[#fa5c5c]/30 rotate-3">
+            <i className="fa-brands fa-itch-io text-4xl text-white -rotate-3"></i>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
+            Ready to submit your project?
+          </h2>
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+            We are hosting the official Creative Jam on Itch.io! Head over to our jam page to
+            officially join, upload your files, and see what everyone else is building!
+          </p>
+          <a
+            href="https://itch.io/jam/hackfromscratch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#fa5c5c] hover:bg-[#ff7b7b] text-white text-xl font-bold py-4 px-10 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(250,92,92,0.4)]"
           >
-            Loading…
-          </iframe>
+            Go to the Itch.io Jam
+            <i className="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+          </a>
         </div>
       </div>
     </div>
