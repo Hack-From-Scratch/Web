@@ -36,16 +36,17 @@ export default function Showcase() {
       textClass: "",
       isP3: true, // Special flag to render the custom text colors
     },
-    // --- UPCOMING EVENTS (Greyed Out) ---
     {
       id: "steamys",
       title: "The Steamys",
+      // desc: "A showcase of 6 student films",
       desc: "COMING SOON",
       route: "#",
-      isActive: false,
-      bgClass: "bg-slate-600",
-      textClass: "text-slate-300",
+      isActive: true,
+      bgClass: "bg-red-950", // Deep velvet red
+      textClass: "text-amber-400", // Award-statue gold
     },
+    // --- UPCOMING EVENTS (Greyed Out) ---
     {
       id: "mccutcheon",
       title: "McCutcheon Mayhem",
