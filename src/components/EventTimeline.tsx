@@ -128,11 +128,11 @@ const scheduleData: StreamEvent[] = [
     title: "Minecraft Crowd Control feat. Benjamin, Jayden W & Michael",
     time: "2026-04-02T20:15:00-04:00",
   },
-  {
-    title: "Mario Kart Run Desert Bus Attempt (Post HFS)",
-    time: "2026-04-03T12:00:00-04:00",
-    isTarget: true,
-  },
+  // {
+  //   title: "Mario Kart Run Desert Bus Attempt (Post HFS)",
+  //   time: "2026-04-03T12:00:00-04:00",
+  //   isTarget: true,
+  // },
   {
     title:
       "ASTRO-USA Astronaut Habitat Tour feat. SEARCH (Space & Earth Analogs Research Chapter of Purdue)",
