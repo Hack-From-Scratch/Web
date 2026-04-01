@@ -101,10 +101,10 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-31T19:15:00-04:00",
   },
   { title: "The Steamys", time: "2026-03-31T20:00:00-04:00", location: "GQT Wabash Landing 9" },
-  // {
-  //   title: "Tech4Change Hackathon Overview & Highlights feat. Catalyst",
-  //   time: "2026-04-01T18:00:00-04:00",
-  // },
+  {
+    title: "New Souper Mario Bros Oui feat. Xander & Jack",
+    time: "2026-04-01T18:00:00-04:00",
+  },
   // {
   //   title: "Catalyst Pitch Night feat. Jason Tennenhouse & Stacey Burr",
   //   time: "2026-04-01T18:45:00-04:00",
