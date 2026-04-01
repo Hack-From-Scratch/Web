@@ -27,7 +27,10 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-28T12:00:00-04:00",
   },
   { title: "Fantasy Campaign Showcases", time: "2026-03-28T13:00:00-04:00" },
-  { title: "Cosplay 101 feat. Cosplay Creation & Appreciation Club", time: "2026-03-28T14:00:00-04:00" },
+  {
+    title: "Cosplay 101 feat. Cosplay Creation & Appreciation Club",
+    time: "2026-03-28T14:00:00-04:00",
+  },
   {
     title: "D&D One Shot: The Treasure of Tealbeard",
     time: "2026-03-28T15:00:00-04:00",
@@ -83,7 +86,7 @@ const scheduleData: StreamEvent[] = [
   {
     title: "P3 - Purdue E3 feat. SIGGD & Game Devs at Purdue",
     time: "2026-03-30T20:00:00-04:00",
-    location: "GQT Wabash Landing 9"
+    location: "GQT Wabash Landing 9",
   },
   {
     title: "Live from Cary - Piano feat. Jason M. Dong, Brandt Garippo & Allen Tan",
@@ -115,11 +118,11 @@ const scheduleData: StreamEvent[] = [
   { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00-04:00" },
   { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00-04:00" },
   { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00-04:00" },
-  {
-    title:
-      "VR Laser Tag: McCutcheon vs Belowground Brought to you by Julian Triveri, Artus Mosquet, Keith Gery, Connor Landzettel & Xander Kutulas",
-    time: "2026-04-02T19:30:00-04:00",
-  },
+  // {
+  //   title:
+  //     "VR Laser Tag: McCutcheon vs Belowground Brought to you by Julian Triveri, Artus Mosquet, Keith Gery, Connor Landzettel & Xander Kutulas",
+  //   time: "2026-04-02T19:30:00-04:00",
+  // },
   { title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T20:15:00-04:00" },
   {
     title: "Mario Kart Run Desert Bus Attempt",
@@ -153,7 +156,11 @@ const scheduleData: StreamEvent[] = [
     title: "Creative Jam Highlights feat. the HackFromScratch Community",
     time: "2026-04-03T22:45:00-04:00",
   },
-  { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00-04:00", location: "Bechtel Innovation and Design Center, 2nd Floor" },
+  {
+    title: "Countdown & Closing Ceremony",
+    time: "2026-04-04T00:00:00-04:00",
+    location: "Bechtel Innovation and Design Center, 2nd Floor",
+  },
 ];
 
 export default function EventTimeline() {
@@ -183,7 +190,6 @@ export default function EventTimeline() {
     };
   }, []);
 
-  
   // init to current day
   const [activeDate, setActiveDate] = useState(() => {
     const now = new Date();
@@ -191,13 +197,10 @@ export default function EventTimeline() {
     let targetEvent =
       scheduleData.find((event, i) => {
         const start = new Date(event.time);
-        const next = scheduleData[i + 1]
-          ? new Date(scheduleData[i + 1].time)
-          : null;
+        const next = scheduleData[i + 1] ? new Date(scheduleData[i + 1].time) : null;
 
         return start <= now && (!next || now < next);
-      }) ||
-      scheduleData.find((event) => new Date(event.time) >= now);
+      }) || scheduleData.find((event) => new Date(event.time) >= now);
 
     if (!targetEvent) {
       targetEvent = scheduleData[scheduleData.length - 1];
@@ -210,7 +213,6 @@ export default function EventTimeline() {
       day: "numeric",
     }).format(new Date(targetEvent.time));
   });
-
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
@@ -234,7 +236,6 @@ export default function EventTimeline() {
           </button>
         ))}
       </div>
-      
 
       {/* The Vertical Line Container */}
       <div className="relative border-l-4 border-slate-700 ml-4 md:ml-8 md:pl-0">
