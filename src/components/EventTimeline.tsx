@@ -124,10 +124,10 @@ const scheduleData: StreamEvent[] = [
   //   time: "2026-04-02T19:30:00-04:00",
   // },
   { title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T19:30:00-04:00" },
-  // {
-  //   title: "Minecraft Crowd Control feat. Benjamin, Jayden W & Michael",
-  //   time: "2026-04-02T19:30:00-04:00",
-  // },
+  {
+    title: "Minecraft Crowd Control feat. Benjamin, Jayden W & Michael",
+    time: "2026-04-02T19:30:00-04:00",
+  },
   {
     title: "Mario Kart Run Desert Bus Attempt",
     time: "2026-04-03T12:00:00-04:00",
