@@ -91,6 +91,11 @@ export default function Layout() {
       alt: "Cadenza Piano Club",
       link: "https://www.instagram.com/cadenza.piano.club/",
     },
+    {
+      src: "/clubs/crazymonkeys.jpg",
+      alt: "The Crazy Monkeys",
+      link: "",
+    },
   ];
 
   return (
@@ -130,6 +135,9 @@ export default function Layout() {
           </Link>
 
           <div className="flex items-center gap-6 font-semibold">
+            {/* NEW SHOWCASE LINK */}
+            <Link to="/showcase">Showcase</Link>
+
             <Link
               to="/jam"
               className={`transition-colors ${
@@ -331,16 +339,6 @@ export default function Layout() {
             >
               <i className="fa-brands fa-reddit text-3xl"></i>
             </a>
-
-            {/* <a
-              href="https://www.linkedin.com/company/hackfromscratch/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="text-slate-700 hover:text-[#0a66c2] transition-all duration-300 hover:-translate-y-1"
-            >
-              <i className="fa-brands fa-linkedin text-3xl"></i>
-            </a> */}
           </div>
 
           <p className="text-slate-600 text-sm">HackFromScratch 2026.</p>

@@ -5,9 +5,9 @@ html {
 }
 
 :root {
-  --color-accent: #EFA736;
-  --color-secondary: #4E95F6;
-  --color-secondary-dark: #6F85A4;
+  --color-accent: #efa736;
+  --color-secondary: #4e95f6;
+  --color-secondary-dark: #6f85a4;
   --text: #161616ff;
   --text-light: rgb(243, 243, 243);
   --text-grey: #e0e4f0;
@@ -68,4 +68,79 @@ html {
 
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+
+/* defines the core visual traits of a scratch block */
+.scratch-block {
+  /* rounded and friendly corners */
+  border-radius: 12px;
+
+  /* the critical Scratch aesthetic: a slightly darker border */
+  border: 2px solid rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden; /* keeps the logo inside the block */
+
+  /* ensures we can position the puzzle piece notch */
+  position: relative;
+}
+
+.scratch-stack-block {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  padding: 12px 20px;
+}
+
+.scratch-block::after {
+  content: "";
+  position: absolute;
+  top: -8px; /* sits right on the top border */
+  left: 20px;
+  width: 16px;
+  height: 8px;
+
+  border-top: none;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 16px 16px;
+
+  background: inherit;
+}
+
+.scratch-block:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* The main block shape */
+.scratch-block-vertical {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+.scratch-block-vertical::after {
+  content: "";
+  position: absolute;
+  bottom: -18px; /* Drops down past the bottom border */
+  left: 64px; /* Indented from the left */
+  width: 56px;
+  height: 18px;
+  background: inherit; /* Copies the background of the main block! */
+  border-bottom: 4px solid rgba(0, 0, 0, 0.6);
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+  border-right: 3px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 8px 8px;
+  z-index: 10;
+}
+
+.scratch-block-vertical:last-child::after {
+  display: none;
 }

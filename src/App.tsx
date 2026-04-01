@@ -8,6 +8,8 @@ import LiveRedirect from "./components/LiveRedirect";
 import CreativeJam from "./pages/CreativeJam";
 import Donate from "./pages/Donate";
 import Home from "./pages/Home";
+import Showcase from "./pages/Showcase";
+import P3Showcase from "./pages/showcase/P3";
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/showcase" element={<Showcase />} />
+          <Route path="/showcase/p3" element={<P3Showcase />} />
           <Route path="/jam" element={<CreativeJam />} />
           <Route path="/live" element={<LiveRedirect />} />
         </Route>
