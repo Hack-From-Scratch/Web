@@ -101,16 +101,16 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-31T19:15:00-04:00",
   },
   { title: "The Steamys", time: "2026-03-31T20:00:00-04:00", location: "GQT Wabash Landing 9" },
+  // {
+  //   title: "Tech4Change Hackathon Overview & Highlights feat. Catalyst",
+  //   time: "2026-04-01T18:00:00-04:00",
+  // },
+  // {
+  //   title: "Catalyst Pitch Night feat. Jason Tennenhouse & Stacey Burr",
+  //   time: "2026-04-01T18:45:00-04:00",
+  // },
   {
-    title: "Tech4Change Hackathon Overview & Highlights feat. Catalyst",
-    time: "2026-04-01T18:00:00-04:00",
-  },
-  {
-    title: "Catalyst Pitch Night feat. Jason Tennenhouse & Stacey Burr",
-    time: "2026-04-01T18:45:00-04:00",
-  },
-  {
-    title: "AJ Does Anything for $4,000 feat. AJ",
+    title: "AJ Does Anything for $1,500 feat. AJ",
     time: "2026-04-01T19:15:00-04:00",
     isTarget: true,
   },
@@ -126,10 +126,10 @@ const scheduleData: StreamEvent[] = [
   { title: "Battlebots Tournament feat. Railside Robotics", time: "2026-04-02T19:30:00-04:00" },
   {
     title: "Minecraft Crowd Control feat. Benjamin, Jayden W & Michael",
-    time: "2026-04-02T19:30:00-04:00",
+    time: "2026-04-02T20:15:00-04:00",
   },
   {
-    title: "Mario Kart Run Desert Bus Attempt",
+    title: "Mario Kart Run Desert Bus Attempt (Post HFS)",
     time: "2026-04-03T12:00:00-04:00",
     isTarget: true,
   },
