@@ -20,7 +20,7 @@ export default function CreativeJam() {
       desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
       prizeType: "raffle",
-      prize: "5x Hyperkin Competitor Controllers",
+      prize: "1 Hyperkin Competitor Controller", // Updated text
     },
     {
       title: "World Builder",
@@ -204,7 +204,10 @@ export default function CreativeJam() {
                   </div>
                   <p className="text-sm text-[var(--text-light)]">
                     <span className="text-white font-bold">
-                      {categories[activeCategory].prizeType === "raffle"
+                      {/* Updated logic to handle Player One specifically */}
+                      {categories[activeCategory].title === "Player One"
+                        ? "5 Individuals Receive:"
+                        : categories[activeCategory].prizeType === "raffle"
                         ? "One Participant Receives:"
                         : "All Participants Receive:"}
                     </span>{" "}
