@@ -20,7 +20,7 @@ export default function CreativeJam() {
       desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
       prizeType: "raffle",
-      prize: "8BitDo Ultimate 2C Wireless Controller",
+      prize: "5x Hyperkin Competitor Controllers",
     },
     {
       title: "World Builder",

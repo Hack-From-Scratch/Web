@@ -268,6 +268,14 @@ export default function Layout() {
           >
             <img src="/sponsors/search.jpeg" alt="SEARCH" className="h-20 md:h-24 object-contain" />
           </a>
+
+          <a href="https://hyperkin.com/" rel="noopener noreferrer" target="_blank">
+            <img
+              src="/sponsors/hyperkin.jpg"
+              alt="Hyperkin"
+              className="h-20 md:h-24 object-contain"
+            />
+          </a>
         </div>
 
         {/* Club Grid */}
