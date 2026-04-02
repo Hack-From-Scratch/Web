@@ -40,7 +40,7 @@ export default function Showcase() {
       title: "The Steamys",
       // desc: "A showcase of 6 student films",
       desc: "COMING SOON",
-      route: "#",
+      route: "/showcase/steamys",
       isActive: true,
       bgClass: "bg-red-950", // Deep velvet red
       textClass: "text-amber-400", // Award-statue gold
