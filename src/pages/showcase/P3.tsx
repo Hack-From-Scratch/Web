@@ -136,7 +136,7 @@ export const p3Games = [
   },
   {
     title: "21 Ways to Die",
-    link: "https://youtu.be/cZS3OzPO9i4",
+    link: "https://youtu.be/ggu3e2C7kyk?si=NSrAqAzy5nZXxAa7",
     storeLink: "",
     highlight: "/events/p3/21 Ways to Die Teaser.mp4",
     description:
