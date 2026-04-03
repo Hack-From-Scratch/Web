@@ -9,9 +9,9 @@ export default function Showcase() {
       desc: "Page Coming Soon",
       route: "#",
       isActive: true,
-      // Red to Yellow gradient
-      bgClass: "bg-gradient-to-r from-red-600 to-yellow-500",
-      textClass: "text-white drop-shadow-md",
+      // Rich brown to yellow gradient
+      bgClass: "bg-gradient-to-r from-yellow-900 to-amber-700",
+      textClass: "text-yellow-50 drop-shadow-md",
     },
     {
       id: "purdue",
@@ -38,23 +38,24 @@ export default function Showcase() {
     {
       id: "steamys",
       title: "The Steamys",
-      // desc: "A showcase of 6 student films",
-      desc: "COMING SOON",
+      desc: "A showcase of student films",
       route: "/showcase/steamys",
       isActive: true,
-      bgClass: "bg-red-950", // Deep velvet red
-      textClass: "text-amber-400", // Award-statue gold
+      // Red to Yellow gradient
+      bgClass: "bg-gradient-to-r from-red-600 to-yellow-500",
+      textClass: "text-white drop-shadow-md",
     },
-    // --- UPCOMING EVENTS (Greyed Out) ---
     {
       id: "mccutcheon",
       title: "McCutcheon Mayhem",
-      desc: "COMING SOON",
-      route: "#",
-      isActive: false,
-      bgClass: "bg-slate-600",
-      textClass: "text-slate-300",
+      desc: "A chaotic 'trivia' game show",
+      route: "/showcase/mcutmayhem",
+      isActive: true,
+      // "Turf War" standoff: Mafia Red on the left vs. Cop Blue on the right
+      bgClass: "bg-gradient-to-r from-cyan-500 to-red-600",
+      textClass: "text-white drop-shadow-md",
     },
+    // --- UPCOMING EVENTS (Greyed Out) ---
     {
       id: "tinydesk",
       title: "Wiley Radio Tinydesk Conert",
