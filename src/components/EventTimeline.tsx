@@ -165,7 +165,7 @@ const scheduleData: StreamEvent[] = [
   },
   {
     title: "Countdown & Closing Ceremony",
-    time: "2026-04-03T11:59:00-04:00",
+    time: "2026-04-03T23:59:00-04:00",
     location: "Bechtel Innovation and Design Center, 2nd Floor",
   },
 ];
