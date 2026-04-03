@@ -6,8 +6,8 @@ export default function CreativeJam() {
   const categories = [
     {
       title: "Audio Alchemist",
-      judge: "Purdue Music Producers",
-      judgeLogo: "/clubs/pmp.jpeg",
+      judge: "Ableton",
+      judgeLogo: "/sponsors/ableton.webp",
       desc: "For projects with a focus on music and sound.",
       criteria: ["Composition & Arrangement", "Sound Design & Mixing"],
       prizeType: "participation",
@@ -15,25 +15,25 @@ export default function CreativeJam() {
     },
     {
       title: "Player One",
-      judge: "SIGGD",
-      judgeLogo: "/clubs/siggd.png",
+      judge: "Hyperkin",
+      judgeLogo: "/sponsors/hyperkin.jpg",
       desc: "For playable, interactive projects.",
       criteria: ["Game feel / Controls", "Core gameplay loop", "Innovation", "Intuitiveness"],
       prizeType: "raffle",
       prize: "1 Hyperkin Competitor Controller", // Updated text
     },
-    {
-      title: "World Builder",
-      judge: "Creative Writing Club",
-      judgeLogo: "/clubs/creativewritingclub.png",
-      desc: "For projects with deep lore, environment design, writing, or immersive atmosphere.",
-      criteria: ["Immersion & Delivery", "Originality", "Depth"],
-      prizeType: "raffle",
-    },
+    // {
+    //   title: "World Builder",
+    //   judge: "Creative Writing Club",
+    //   judgeLogo: "/clubs/creativewritingclub.png",
+    //   desc: "For projects with deep lore, environment design, writing, or immersive atmosphere.",
+    //   criteria: ["Immersion & Delivery", "Originality", "Depth"],
+    //   prizeType: "raffle",
+    // },
     {
       title: "From Scratch",
-      judge: "Purdue Hackers",
-      judgeLogo: "/clubs/purduehackers.jpeg",
+      judge: "SEARCH",
+      judgeLogo: "/clubs/search.jpeg",
       desc: "For the project that pushes the maker the most out of their comfort zone (all about HOW you build it).",
       criteria: [
         "Personal Growth & Lessons Learned",
@@ -45,7 +45,7 @@ export default function CreativeJam() {
     },
     {
       title: "Mayhem",
-      judge: "McCutcheon Mayhem Team",
+      judge: "The McCutcheon Mayhem Team",
       judgeLogo: "/clubs/mcutroyalhighlanders.jpeg",
       desc: "For the most absurd, chaotic, outside-the-box projects.",
       criteria: [
@@ -58,8 +58,8 @@ export default function CreativeJam() {
     },
     {
       title: "Visualization",
-      judge: "Creative Coding Club",
-      judgeLogo: "/clubs/creativecodingclub.jpeg",
+      judge: "UUNA TEK",
+      judgeLogo: "/sponsors/uunatek.png",
       desc: "For projects with a focus on visual arts.",
       criteria: ["Art Direction & Style", "Technical Execution", "Visual Consistency"],
       prizeType: "raffle",

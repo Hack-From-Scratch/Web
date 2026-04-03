@@ -68,7 +68,7 @@ const scheduleData: StreamEvent[] = [
     title: "Tetr.io 1v1 rotational feat. Kevin Huang, Niko Gratton & Eric Zhang",
     time: "2026-03-29T15:15:00-04:00",
   },
-  { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:45:00-04:00" },
+  // { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:45:00-04:00" },
   {
     title: "The Haunted Mansion Machine feat. Boilermaker Rube Goldberg Team",
     time: "2026-03-29T18:00:00-04:00",
@@ -133,6 +133,7 @@ const scheduleData: StreamEvent[] = [
   //   time: "2026-04-03T12:00:00-04:00",
   //   isTarget: true,
   // },
+  // { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T18:00:00-04:00" },
   {
     title:
       "ASTRO-USA Astronaut Habitat Tour feat. SEARCH (Space & Earth Analogs Research Chapter of Purdue)",
