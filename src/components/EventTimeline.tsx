@@ -151,7 +151,10 @@ const scheduleData: StreamEvent[] = [
       "Sighorse Panel feat. Kartavya Vashishtha, Grace Yoder, Arhan Chaudhary, Henry Rovnyak, Angela Qian & Ishan Goel",
     time: "2026-04-03T20:05:00-04:00",
   },
-  { title: "Improv Comedy Show feat. Ad Liberation", time: "2026-04-03T21:00:00-04:00" },
+  {
+    title: "Improv Comedy Show feat. Ad Liberation & Crazy Monkeys",
+    time: "2026-04-03T21:00:00-04:00",
+  },
   // {
   //   title: "Metal Casting feat. Purdue American Foundry Society (AFS)",
   //   time: "2026-04-03T22:30:00-04:00",
