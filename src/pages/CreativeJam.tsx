@@ -86,7 +86,7 @@ export default function CreativeJam() {
       <div className="rounded-2xl overflow-hidden border border-slate-700 shadow-xl aspect-video mb-20">
         <iframe
           className="w-full h-full"
-          src="https://www.youtube.com/embed/wKPTugyLfTs"
+          src="https://youtu.be/YclCZSAWVuU"
           title="Creative Jam Overview"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -230,19 +230,19 @@ export default function CreativeJam() {
             <i className="fa-brands fa-itch-io text-4xl text-white -rotate-3"></i>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
-            Ready to submit your project?
+            Check out the 2026 creative jam submissions at
           </h2>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            We are hosting our Creative Jam on Itch.io! Head over to our jam page to officially
-            join, upload your files, and see what everyone else is building!
+            We hosted a creative jam for all on itch.io! Head over to our jam page to see the work
+            that creatives shared!
           </p>
           <a
-            href="https://itch.io/jam/hackfromscratch"
+            href="https://itch.io/jam/hackfromscratch/entries"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#fa5c5c] hover:bg-[#ff7b7b] text-white text-xl font-bold py-4 px-10 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(250,92,92,0.4)]"
           >
-            Go to the Itch.io Jam
+            Check out submissions
             <i className="fa-solid fa-arrow-up-right-from-square text-sm"></i>
           </a>
         </div>
