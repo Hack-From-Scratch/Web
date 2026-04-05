@@ -86,7 +86,7 @@ export default function CreativeJam() {
       <div className="rounded-2xl overflow-hidden border border-slate-700 shadow-xl aspect-video mb-20">
         <iframe
           className="w-full h-full"
-          src="https://www.youtube.com/watch?v=YclCZSAWVuU"
+          src="https://www.youtube.com/embed/YclCZSAWVuU"
           title="Creative Jam Overview"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
