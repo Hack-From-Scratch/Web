@@ -3,8 +3,8 @@ import EventTimeline from "../components/EventTimeline";
 
 export default function Home() {
   // const channelId = "UCb89kHtc8hzLqaJMKDiKrRw";
-  // const channelUrl = `https://www.youtube.com/channel/${channelId}/live`; // yt
-  const channelUrl = `https://www.twitch.tv/hackfromscratch`; // twitch
+  const channelUrl = `https://youtube.com/playlist?list=PLH5o8OsF4P6mhpzpYe0Nt5z89d5fdvyU0&si=PTYF4NJSIF6b-HBZ`; // yt playlist
+  // const channelUrl = `https://www.twitch.tv/hackfromscratch`; // twitch
 
   return (
     <div className="flex flex-col gap-16 pb-16">
@@ -75,7 +75,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="px-8 py-4 bg-[var(--color-secondary)] hover:bg-slate-700 text-slate-100 font-bold text-lg rounded-lg border border-slate-700 shadow-lg transition-transform hover:-translate-y-1 text-center"
           >
-            Join the Twitch Chat
+            Check out Vods & Videos
           </a>
         </div>
       </section>
