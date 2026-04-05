@@ -230,7 +230,7 @@ export default function CreativeJam() {
             <i className="fa-brands fa-itch-io text-4xl text-white -rotate-3"></i>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
-            Check out the 2026 creative jam submissions at
+            Check out the 2026 creative jam submissions!
           </h2>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             We hosted a creative jam for all on itch.io! Head over to our jam page to see the work
