@@ -12,6 +12,9 @@ import Showcase from "./pages/Showcase";
 import P3Showcase from "./pages/showcase/P3";
 import SteamysShowcase from "./pages/showcase/Steamys";
 import McCutcheonMayhem from "./pages/showcase/McCutcheonMayhem";
+import SteamAndSorcery from "./pages/showcase/SteamAndSorcery";
+import PurduePlays from "./pages/showcase/PurduePlays";
+import TracksFromScratch from "./pages/showcase/TracksFromScratch";
 
 export default function App() {
   return (
@@ -22,9 +25,12 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/showcase" element={<Showcase />} />
+          <Route path="/showcase/steamandsorcery" element={<SteamAndSorcery />} />
+          <Route path="/showcase/purdueplays" element={<PurduePlays />} />
           <Route path="/showcase/p3" element={<P3Showcase />} />
           <Route path="/showcase/steamys" element={<SteamysShowcase />} />
           <Route path="/showcase/mcutmayhem" element={<McCutcheonMayhem />} />
+          <Route path="/showcase/tracksfromscratch" element={<TracksFromScratch />} />
           <Route path="/jam" element={<CreativeJam />} />
           <Route path="/live" element={<LiveRedirect />} />
         </Route>

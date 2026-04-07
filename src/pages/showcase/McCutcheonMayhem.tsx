@@ -23,9 +23,8 @@ export default function McCutcheonMayhem() {
       {/* Page Header */}
       <div className="max-w-5xl mx-auto text-center mb-20">
         <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight text-slate-900 uppercase">
-          <span className="text-slate-900">McCutcheon</span>{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
-            Mayhem
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600">
+            McCutcheon Mayhem
           </span>
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto font-bold uppercase tracking-widest">
