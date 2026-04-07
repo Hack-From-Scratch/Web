@@ -29,7 +29,7 @@ export default function Layout() {
       alt: "Fantasy Club",
       link: "https://centralia.aquest.com/doku.php",
     },
-    { src: "/clubs/hackindy.jpeg", alt: "Hack Indy", link: "https://www.hackindy.io/" },
+    // { src: "/clubs/hackindy.jpeg", alt: "Hack Indy", link: "https://www.hackindy.io/" },
     {
       src: "/clubs/lifeonthewabash.jpg",
       alt: "Life on the Wabash",
@@ -81,11 +81,11 @@ export default function Layout() {
       alt: "Purdue Music Producers",
       link: "https://discord.gg/UFDhq5VfaF",
     },
-    {
-      src: "/clubs/purdueafs.jpeg",
-      alt: "Purdue AFS Chapter",
-      link: "https://boilerlink.purdue.edu/organization/purdueamericanfoundrysociety",
-    },
+    // {
+    //   src: "/clubs/purdueafs.jpeg",
+    //   alt: "Purdue AFS Chapter",
+    //   link: "https://boilerlink.purdue.edu/organization/purdueamericanfoundrysociety",
+    // },
     {
       src: "/clubs/cadenzapianoclub.jpg",
       alt: "Cadenza Piano Club",

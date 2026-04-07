@@ -50,12 +50,25 @@ export default function Home() {
             ></iframe>
           </div>
         </div> */}
-        <div className="w-full max-w-5xl px-4 mb-10">
+        {/* <div className="w-full max-w-5xl px-4 mb-10">
           <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-[var(--color-secondary)] shadow-2xl shadow-orange-900/20">
             <iframe
               className="absolute top-0 left-0 w-full h-full object-cover"
               src="https://player.twitch.tv/?channel=hackfromscratch&parent=hackfromscratch.org&parent=www.hackfromscratch.org&autoplay=true&muted=true"
               title="Twitch live stream player"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div> */}
+        <div className="w-full max-w-5xl px-4 mb-10">
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-[var(--color-secondary)] shadow-2xl shadow-orange-900/20">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              // Added ?autoplay=1 and &mute=1 to the URL here:
+              src="https://www.youtube.com/embed/Hf3UH4M3nJQ?autoplay=1&mute=1"
+              title="YouTube video player"
+              // Added the allow property with 'autoplay' included:
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
           </div>

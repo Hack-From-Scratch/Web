@@ -155,8 +155,8 @@ export default function Donate() {
           </h2>
           <p className="text-slate-400 mb-10 text-lg max-w-xl mx-auto">
             All donations, reward selections, and shipping details are processed securely through
-            our official Tiltify campaign. Donations end on Saturday, April 11th so make sure to get
-            yours in before then!
+            our official Tiltify campaign. Donations end at 11:59pm on Sunday, April 12th so make
+            sure to get yours in before then!
           </p>
 
           {/* IMPORTANT: Swap out the href="#" with your actual Tiltify campaign URL once it's live! */}
