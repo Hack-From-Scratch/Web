@@ -5,8 +5,10 @@ export default function Showcase() {
     {
       id: "steam",
       title: "Steam & Sorcery",
-      desc: "A Showcase of Fantasy at Purdue",
-      route: "/showcase/steamandsorcery",
+      desc: "Coming Soon",
+      // desc: "A Showcase of Fantasy at Purdue",
+      // route: "/showcase/steamandsorcery",
+      route: "#",
       isActive: true,
       // Muted from amber to stone/orange for a softer tavern feel
       bgClass: "bg-gradient-to-r from-stone-800 to-orange-900",
@@ -15,8 +17,10 @@ export default function Showcase() {
     {
       id: "purdue",
       title: "Purdue Plays",
-      desc: "Gameplay brought to you by Purdue students",
-      route: "/showcase/purdueplays",
+      desc: "Coming Soon",
+      // desc: "Gameplay brought to you by Purdue students",
+      // route: "/showcase/purdueplays",
+      route: "#",
       isActive: true,
       // Shifted from harsh cyan/purple to softer sky/indigo
       bgClass: "bg-gradient-to-r from-sky-600 to-indigo-600",
@@ -56,8 +60,10 @@ export default function Showcase() {
     {
       id: "music",
       title: "Tracks From Scratch",
-      desc: "A showcase of the music scene at Purdue",
-      route: "/showcase/tracksfromscratch",
+      desc: "Coming Soon",
+      // desc: "A showcase of the music scene at Purdue",
+      // route: "/showcase/tracksfromscratch",
+      route: "#",
       isActive: true,
       // Shifted emerald to teal to lower the neon intensity
       bgClass: "bg-gradient-to-r from-slate-800 to-teal-700",
@@ -66,8 +72,10 @@ export default function Showcase() {
     {
       id: "comedy",
       title: "Comedy",
-      desc: "Students making funny jokes",
-      route: "/showcase/comedy",
+      desc: "Coming Soon",
+      // desc: "Students making funny jokes",
+      // route: "/showcase/comedy",
+      route: "#",
       isActive: true,
       // Warmed up the yellow so it's less blinding
       bgClass: "bg-gradient-to-r from-amber-200 to-yellow-500",
