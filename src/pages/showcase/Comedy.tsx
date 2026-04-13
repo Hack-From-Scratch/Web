@@ -1,5 +1,3 @@
-import React from "react";
-
 export const comedyFromScratchSegments = [
   {
     id: "cfs1",
