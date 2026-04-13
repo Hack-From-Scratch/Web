@@ -6,7 +6,7 @@ export const comedyFromScratchSegments = [
     link: "https://www.youtube.com/embed/ZXVdHtbcnqU?start=7183",
     originalLink: "https://youtu.be/ZXVdHtbcnqU?list=PLH5o8OsF4P6mhpzpYe0Nt5z89d5fdvyU0&t=7183",
     description:
-      "A hilarious joint comedy show featuring Purdue's Crazy Monkeys and Ad Liberation, performing live for the Hack From Scratch charity livestream.",
+      "A hilarious joint comedy show featuring Purdue's Crazy Monkeys and Ad Liberation, performing live for Hack From Scratch!",
   },
 ];
 
@@ -36,11 +36,11 @@ export default function ComedyFromScratch() {
               key={show.id}
               className={`flex flex-col ${
                 isEven ? "md:flex-row" : "md:flex-row-reverse"
-              } items-center gap-8 md:gap-12 bg-gradient-to-r from-amber-200 to-yellow-500 backdrop-blur-md p-6 md:p-10 rounded-3xl shadow-xl border-4 border-amber-300`}
+              } items-center gap-8 md:gap-12 bg-white/60 backdrop-blur-md p-6 md:p-10 rounded-3xl shadow-xl border-4 border-slate-200`}
             >
               {/* YouTube Iframe Side */}
               <div className="w-full md:w-7/12 flex-shrink-0">
-                <div className="relative w-full pb-[56.25%] h-0 rounded-2xl overflow-hidden shadow-2xl bg-black border-4 border-amber-950">
+                <div className="relative w-full pb-[56.25%] h-0 rounded-2xl overflow-hidden shadow-2xl">
                   <iframe
                     src={show.link}
                     title={`${show.title} Broadcast`}
