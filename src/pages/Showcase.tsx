@@ -71,10 +71,10 @@ export default function Showcase() {
     {
       id: "comedy",
       title: "Comedy",
-      desc: "Coming Soon",
-      // desc: "Students making funny jokes",
-      // route: "/showcase/comedy",
-      route: "#",
+      // desc: "Coming Soon",
+      desc: "Students making funny jokes",
+      route: "/showcase/comedy",
+      // route: "#",
       isActive: true,
       // Warmed up the yellow so it's less blinding
       bgClass: "bg-gradient-to-r from-amber-200 to-yellow-500",

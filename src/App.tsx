@@ -15,6 +15,7 @@ import McCutcheonMayhem from "./pages/showcase/McCutcheonMayhem";
 import SteamAndSorcery from "./pages/showcase/SteamAndSorcery";
 import PurduePlays from "./pages/showcase/PurduePlays";
 import TracksFromScratch from "./pages/showcase/TracksFromScratch";
+import ComedyFromScratch from "./pages/showcase/Comedy";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/showcase/steamys" element={<SteamysShowcase />} />
           <Route path="/showcase/mcutmayhem" element={<McCutcheonMayhem />} />
           <Route path="/showcase/tracksfromscratch" element={<TracksFromScratch />} />
+          <Route path="/showcase/comedy" element={<ComedyFromScratch />} />
           <Route path="/jam" element={<CreativeJam />} />
           <Route path="/live" element={<LiveRedirect />} />
         </Route>
